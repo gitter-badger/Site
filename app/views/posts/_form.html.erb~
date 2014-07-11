@@ -1,0 +1,57 @@
+<div class= "row">
+<br>
+<section class="small-10 small-centered columns">
+<div class= "panel">
+<%= form_for(@post) do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br>
+    <%= f.text_field :content %>
+  </div>
+  <div class="field">
+    <label>Movie review</label>
+    <%= f.check_box :mr %>
+  </div>
+  <div class="field">
+    <label>Vogue</label>
+    <%= f.check_box :vg %>
+  </div>
+  <div class="field">
+    <label>Trumpet</label>
+    <%= f.check_box :tp %>
+  </div>
+  <div class="field">
+    <label>Women Achiever</label>
+    <%= f.check_box :wa %>
+  </div>
+<div class="field">
+    <label> submit to counsellor</label>
+    <%= f.check_box :couns%>
+   <%= f.fields_for :post_attachments do |p| %>
+     <div class="field">
+       <label>Pics</label>
+       <%= p.file_field :avatar, :multiple => true, name: "[post_attachments][avatar]" %>
+     </div>
+   <% end %>
+  <div class="actions" class="button">
+    <%= f.submit 'Add to mycollection', :class => 'button'%>
+  </div>
+<% end %>
+</div>
+</section>
+</div>

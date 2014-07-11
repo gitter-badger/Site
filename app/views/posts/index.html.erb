@@ -1,0 +1,61 @@
+<div class= "row">
+<br>
+<section class="small-8 small-centered columns">
+<div class= "panel">
+<span class="label"><h1>Listing posts</h1></span>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>TITLE</th>
+      <th>CONTENT</th>
+      <th>MOVIE REVIEW</th>
+      <th>VOGUE</th>
+      <th>TRUMPET</th>
+      <th>WOMEN ACHIEVERS</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+<%if admin_signed_in?%>
+<tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.title %></td>
+        <td><%= post.content %></td>
+        <td><%= post.mr %></td>
+        <td><%= post.vg %></td>
+        <td><%= post.tp %></td>
+        <td><%= post.wa %></td>
+        <td><%= link_to 'Show', post %></td>
+        <%if current_admin.has_role? "admin"%>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, class: "btn btn-danger", data: { confirm: 'Are you sure?' } %></td>
+        <%end%>
+      </tr>
+    <% end %>
+  </tbody>
+<%else%>
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.title %></td>
+        <td><%= post.content %></td>
+        <td><%= post.mr %></td>
+        <td><%= post.vg %></td>
+        <td><%= post.tp %></td>
+        <td><%= post.wa %></td>
+        <td><%= link_to 'Show', post %></td>
+      </tr>
+    <% end %>
+  </tbody>
+<%end%>
+</table>
+
+<br>
+
+<%= link_to 'New Post', new_post_path ,:class=>'button' %>
+</div>
+</div>
+</section>
+</div>
