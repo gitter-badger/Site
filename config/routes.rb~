@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   get 'home/contactus' =>'home#contactus'
   get '/members' =>'home#members'
+  get '/gallery' =>'home#gallery'
 
   #devise_for :admins
   devise_for :admins, :controllers => { :omniauth_callbacks => "admins/omniauth_callbacks" }

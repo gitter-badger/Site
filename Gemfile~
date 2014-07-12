@@ -48,3 +48,5 @@ gem 'devise'
 gem 'foundation-rails'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem "animate-rails"
+
