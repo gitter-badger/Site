@@ -8,6 +8,7 @@
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "foundation/functions";
 
+
 // $experimental: true;
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
@@ -295,11 +296,11 @@ $crumb-side-padding: rem-calc(14);
 
 // We use these to set various text styles for breadcrumbs.
  $crumb-font-size: rem-calc(13);
-// $crumb-font-color: $primary-color;
-// $crumb-font-color-current: #333;
+ $crumb-font-color: #568;
+ $crumb-font-color-current: #04D3D3;
 // $crumb-font-color-unavailable: #999;
 // $crumb-font-transform: uppercase;
-// $crumb-link-decor: underline;
+ $crumb-link-decor: underline;
 
 // We use these to control the slash between breadcrumbs
 // $crumb-slash-color: #aaa;
@@ -698,7 +699,7 @@ $crumb-side-padding: rem-calc(14);
 // $orbit-caption-font-color: #fff;
 // $orbit-caption-font-size: rem-calc(14);
 // $orbit-caption-position: "bottom"; // Supported values: "bottom", "under"
-// $orbit-caption-padding: rem-calc(10 14);
+// $orbit-caption-padding: rem-calc(10 15);
 // $orbit-caption-height: auto;
 
 // We use these to control the left/right nav styles
@@ -762,7 +763,7 @@ $crumb-side-padding: rem-calc(14);
 // $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
-// $panel-bg: scale-color(#fff, $lightness: -5%);
+ $panel-bg: scale-color(#123, $lightness: -5%);
 // $panel-border-style: solid;
 // $panel-border-size: 1px;
 
@@ -775,7 +776,7 @@ $crumb-side-padding: rem-calc(14);
 // $panel-padding: rem-calc(20);
 
 // We use these to set default font colors
-// $panel-font-color: #333;
+$panel-font-color: #456;
 // $panel-font-color-alt: #fff;
 
 // $panel-header-adjust: true;
@@ -1123,7 +1124,7 @@ $crumb-side-padding: rem-calc(14);
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
- $topbar-bg-color: #434f7b;
+ $topbar-bg-color: #AD1C03;
  $topbar-bg: $topbar-bg-color;
 
 // Height and margin

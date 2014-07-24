@@ -14,13 +14,14 @@ Rails.application.routes.draw do
   devise_for :admins, :controllers => { :omniauth_callbacks => "admins/omniauth_callbacks" }
 
   resources :post_attachments
-  root :to => "home#index"
+  root :to => redirect('/home/index')
   resources :posts
   get 'check' => 'posts#check'
   get '/movie/index'=>'movie#index'
   get '/trumpet/index' => 'trumpet#index'
  
   get '/women/index' =>'women#index'
+ 						
   get '/vogue/index' =>'vogue#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

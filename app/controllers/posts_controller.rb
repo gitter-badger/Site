@@ -37,9 +37,9 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-         params[:post_attachments]['avatar'].each do |a|
-          @post_attachment = @post.post_attachments.create!(:avatar => a, :post_id => @post.id)
-       end
+     #    params[:post_attachments]['avatar'].each do |a|
+      #    @post_attachment = @post.post_attachments.create!(:avatar => a, :post_id => @post.id)
+      # end
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else

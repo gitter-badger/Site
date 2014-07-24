@@ -45,7 +45,7 @@
    <%= f.fields_for :post_attachments do |p| %>
      <div class="field">
        <label>Pics</label>
-       <%= p.file_field :avatar, :multiple => true, name: "[post_attachments][avatar]" %>
+       <%= p.file_field :avatar, :multiple => true, name: "post_attachments[avatar]" %>
      </div>
    <% end %>
   <div class="actions" class="button">
