@@ -49,4 +49,7 @@ gem 'foundation-rails'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem "animate-rails"
+gem 'devise'
+gem 'cancan'
+gem 'rolify'
 
