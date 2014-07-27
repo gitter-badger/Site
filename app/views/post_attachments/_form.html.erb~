@@ -22,7 +22,7 @@
     <%= f.text_field :avatar %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Create",class: 'button' %>
   </div>
 <% end %>
 </div>

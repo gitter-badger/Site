@@ -49,7 +49,7 @@
      </div>
    <% end %>
   <div class="actions" class="button">
-    <%= f.submit 'Add to mycollection', :class => 'button'%>
+    <%= f.submit 'Add to mycollection', :class => 'btn btn-mini btn-success'%>
   </div>
 <% end %>
 </div>
