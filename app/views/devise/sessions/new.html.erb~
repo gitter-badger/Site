@@ -15,7 +15,7 @@
   <% end -%>
 
   <div><%= f.submit "Sign in",class: 'button' %></div>
-  <%= link_to "Sign in with Facebook", admin_omniauth_authorize_path(:facebook), class: 'button' %>
+//  <%= link_to "Sign in with Facebook", admin_omniauth_authorize_path(:facebook), class: 'button' %>
 
 <% end %>
 

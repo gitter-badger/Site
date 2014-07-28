@@ -10,13 +10,13 @@
   <%= f.text_field :username, autofocus: true, :class => 'input-xlarge', placeholder: 'Enter UserName' %></div>
 
   <div><%= f.label :email %><br />
-  <%= f.email_field :email, autofocus: true :class => 'input-xlarge', placeholder: 'Enter Email-id' %></div>
+  <%= f.email_field :email, autofocus: true ,:class => 'input-xlarge', placeholder: 'Enter Email-id' %></div>
 
   <div><%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "off", :class => 'input-xlarge', placeholder: 'Enter Password' %></div>
 
   <div><%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" :class => 'input-xlarge', placeholder: 'Re-Enter Your Password' %></div>
+    <%= f.password_field :password_confirmation, autocomplete: "off", :class => 'input-xlarge', placeholder: 'Re-Enter Your Password' %></div>
 
  
   
