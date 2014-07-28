@@ -1,6 +1,7 @@
 
 class Admin < ActiveRecord::Base
-  include Authority::UserAbilities  
+
+  resourcify
   rolify
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable

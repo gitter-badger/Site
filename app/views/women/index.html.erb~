@@ -9,6 +9,7 @@
       <th>TITLE</th>
       <th>CONTENT</th>
       <th>More</th>
+      <th>Delelte </th>
      </tr>
   </thead>
 <tbody>
@@ -18,7 +19,9 @@
         <td><%= post.content %></td>
         
      <td><a href="#" data-reveal-id="<%= post.title%>" class ="btn btn-mini "> More ... </a></td>
-       
+       <% if can? :destroy, @post %>
+    <td><%= link_to "Destroy", @post, :method => :delete, :confirm => "Are you sure?" %> </td>
+  <% end %>
     <% end %>
 
      </tr>
@@ -64,10 +67,12 @@
   <a class="close-reveal-modal">&#215;</a>
 </div>
 </div>
-
-
+<% @posts.each do |post| %>
+   
+  <% if can? :destroy, @post %>
 <%= link_to 'New Post', new_post_path , :class => 'btn btn-mini btn-success' %>
-
+<%end%>
+<%end%>
 </div>
 </section>
 </div>

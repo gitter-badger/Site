@@ -6,14 +6,14 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
   end
- def check
-   if admin
-      @val=admin.has_role? "admin"
- else 
-    @val=false
-  end
- return @val
- end
+ #def check
+ #  if admin
+ #     @val=admin.has_role? "admin"
+ #else 
+ #   @val=false
+ # end
+ #return @val
+ #end
   # GET /posts/1
   # GET /posts/1.json
   def show
