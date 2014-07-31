@@ -19,6 +19,7 @@ class PostAttachmentsController < ApplicationController
 
   # GET /post_attachments/1/edit
   def edit
+    authorize! :edit, @post_attachment
   end
 
   # POST /post_attachments

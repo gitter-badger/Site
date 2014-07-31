@@ -6,7 +6,8 @@
 <%= render 'form' %>
 <div class="button">
 <%= link_to 'Show', @post %> |
-<%= link_to 'Back', posts_path %>
+
+<a href="/women/index">Back</a>
 </div>
 
 </div>

@@ -1,5 +1,7 @@
 <div class="row" data-equalizer>
   <div class="large-6 columns panel" data-equalizer-watch>
+
+<h1>About Us !!</h1>
 <p>The Aakriti, official girl's forum of CEG was inaugurated on 15 th September, 2011.The founder & President of Aakriti club was T.Abinaya. The Vice President was Anjana Chadrasekaran. The general Secretaries were Josephine Nirmala, Dhivya, Rashmi, and Mahishaa. The chief guest was Usha Mahadevan, former Dean, Madras school of social work, Loyola. The function was presided over by former VC Dr.Mannar Jawahar and former Dean Dr.M.Sekar.
 </p>
 
@@ -19,15 +21,16 @@
 </ol>
 
 <div align="left">
-<a href="#" data-reveal-id="firstModal" class="radius button">Contact Us </a>
+<a href="#" data-reveal-id="firstModal" class="radius button">Description </a>
 
 
 <!-- Reveal Modals begin -->
 <div id="firstModal" class="reveal-modal" data-reveal>
-  <h2>This is a modal.</h2>
-  <p>Reveal makes these very easy to summon and dismiss. The close button is simply an anchor with a unicode character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere outside the modal will also dismiss it.</p>
-  <p>Finally, if your modal summons another Reveal modal, the plugin will handle that for you gracefully.</p>
-  <p><a href="#"  class="secondary button">Second Modal...</a></p>
+  <h2>Description</h2>
+  <p>
+There is a strong need for women to take up greater responsibilities and equip themselves with the knowledge of stress management and learn to face the world with courage and passion. Out of the 40% of women present in our college only ten percent participate in non collegiate activities. In olden days , Women did not get to make many of their own choices and a majority of the time their life was mainly mapped out for them prior to adulthood. And now given a chance or taking the advantage of the struggles made by the women of yesteryears they still break their necks to reach their goals. Noticing that women of our college need adequate emotional support and the need to handle problems without taking wrong and hasty decisions, the idea of a girls' forum emanated.
+</p>
+
   <a class="close-reveal-modal">&#215;</a>
 </div>
 </div>

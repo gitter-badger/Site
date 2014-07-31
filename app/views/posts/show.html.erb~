@@ -43,7 +43,7 @@
 <% end %>
 <div class="button">
 <%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<a href="/women/index">Back</a>
 </div>
 </div>
 </section>

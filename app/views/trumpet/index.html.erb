@@ -93,8 +93,9 @@ There are four main self-defence strategies- psychological, technical, legal and
 </div>
 
 
-
+<%#if can? :manage, @post %>
 <%= link_to 'New Post', new_post_path , :class => 'btn btn-mini btn-success' %>
+<%#end%>
 </div>
 </section>
 </div>
