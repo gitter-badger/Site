@@ -106,7 +106,6 @@ GEM
       mail
       sinatra
       skinny (>= 0.1.2)
-      sqlite3-ruby
       thin
     mime-types (1.25.1)
     minitest (5.3.5)
@@ -184,9 +183,6 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    sqlite3 (1.3.9)
-    sqlite3-ruby (1.3.3)
-      sqlite3 (>= 1.3.3)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
@@ -236,7 +232,6 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
-  sqlite3
   therubyracer
   turbolinks
   twitter-bootstrap-rails!
