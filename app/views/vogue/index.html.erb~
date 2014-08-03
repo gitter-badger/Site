@@ -1,10 +1,40 @@
-<h1>Vogue</h1>
+
+<h1 align = "center" >Vogue</h1>
+<div class= "row">
+<br>
+<section class="small-10 small-centered columns">
+<div class= "panel">
+<table>
+ <thead>
+    <tr>
+      <th>TITLE</th>
+      <th>CONTENT</th>
+      <th>More</th>
+      <th colspan="3"></th>
+     </tr>
+  </thead>
+<tbody>
 <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
         <td><%= post.content %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        
+     <td><a href="#" data-reveal-id="<%= post.title%>" class ="btn btn-mini btn-success "> More</a></td>
+       <td><%= link_to 'Show', post , :class => 'btn btn-mini '%></td>
+       <% if current_admin.has_role? :admin%>
+	<td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , :class => 'btn btn-mini btn-danger'%></td>
+<% end %> </td>
     <% end %>
+
+     </tr>
+</tbody>
+</table>
+<br>
+<br>
+
+<% if current_admin.has_role? :admin%>
+<%= link_to 'New Post', new_post_path , :class => 'btn btn-mini btn-success' %>
+<% end %>
+</div>
+</section>
+</div>
