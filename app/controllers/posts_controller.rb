@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-
+# load_and_authorize_resource
   # GET /posts
   # GET /posts.json
   def index
@@ -18,6 +18,7 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
         @post_attachments = @post.post_attachments.all
+    
   end
 
   # GET /posts/new
@@ -28,7 +29,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    authorize! :edit, @post
+#    authorize! :edit, Post
   end
 
   # POST /posts
@@ -67,7 +68,7 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
-     authorize! :destroy, @post
+#     authorize! :destroy, @post
     @post.destroy
     respond_to do |format|
       format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
@@ -85,4 +86,7 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :content, :mr, :vg, :tp, :wa,:couns)
     end
+  # def check_permissions
+   	
+  # end
 end

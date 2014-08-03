@@ -62,4 +62,5 @@ group :assets do
 end
 
 gem 'less-rails-bootstrap'
+gem 'mailcatcher'
 

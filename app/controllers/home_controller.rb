@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+#  AdminNotify.notification(@admin).deliver
   def index
   end
 

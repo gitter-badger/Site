@@ -28,7 +28,12 @@
   <h2>Contact Us</h2>
   <p>
 <b>Contact info : </b>
-Email	aakriti.ceg@gmail.com</p>
+<br>
+<b>Email :</b>	 
+<a href="mailto:aakriti.ceg@gmail.com">
+                         <span class="glyphicon glyphicon-send"></span> 
+                         <span class="hidden-xs">aakriti.ceg@gmail.com</span>
+                    </a>
   <a class="close-reveal-modal">&#215;</a>
 </div>
 

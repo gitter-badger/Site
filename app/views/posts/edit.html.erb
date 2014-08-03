@@ -2,13 +2,13 @@
 <br>
 <section class="small-6 small-centered columns">
 <div class= "panel">
-<span class="label"><h1>Editing Post</h1></span>
+<span class="glyphicon glyphicon-plus-sign"><h1 align="center">Editing Post</h1></span>
 <%= render 'form' %>
-<div class="button">
-<%= link_to 'Show', @post %> |
+<%= link_to '<- Back', women_index_path, :class => 'btn btn-mini' %>
+<%= link_to 'Show ->', @post , :class => 'btn btn-mini' %> |
 
-<a href="/women/index">Back</a>
-</div>
+
+
 
 </div>
 </section>

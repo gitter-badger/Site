@@ -2,6 +2,7 @@
 <br>
 <section class="small-10 small-centered columns">
 <div class= "panel">
+<% if current_admin.has_role? :admin%>
 <%= form_for(@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
@@ -51,6 +52,9 @@
   <div class="actions" class="button">
     <%= f.submit 'Add to mycollection', :class => 'btn btn-mini btn-success'%>
   </div>
+<% end %>
+<%elsif %>
+   <h3>Access Denied</h3>
 <% end %>
 </div>
 </section>

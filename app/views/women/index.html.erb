@@ -9,7 +9,7 @@
       <th>TITLE</th>
       <th>CONTENT</th>
       <th>More</th>
-      <th> Show </th>
+      <th colspan="3"></th>
      </tr>
   </thead>
 <tbody>
@@ -18,8 +18,11 @@
         <td><%= post.title %></td>
         <td><%= post.content %></td>
         
-     <td><a href="#" data-reveal-id="<%= post.title%>" class ="btn btn-mini "> More</a></td>
-       <td><%= link_to 'Show', post %></td>
+     <td><a href="#" data-reveal-id="<%= post.title%>" class ="btn btn-mini btn-success "> More</a></td>
+       <td><%= link_to 'Show', post , :class => 'btn btn-mini '%></td>
+       <% if current_admin.has_role? :admin%>
+	<td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , :class => 'btn btn-mini btn-danger'%></td>
+<% end %> </td>
     <% end %>
 
      </tr>
@@ -66,9 +69,9 @@
 </div>
 </div>
 
-
+<% if current_admin.has_role? :admin%>
 <%= link_to 'New Post', new_post_path , :class => 'btn btn-mini btn-success' %>
-
+<% end %>
 </div>
 </section>
 </div>
