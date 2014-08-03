@@ -7,7 +7,7 @@ gem 'rails', '4.1.1'
 gem 'carrierwave'
 gem 'authority'
 # Use mysql as the database for Active Record
-#gem 'mysql2'
+gem 'mysql2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
