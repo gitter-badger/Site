@@ -30,13 +30,13 @@ Rails.application.configure do
   # Adds additional error checking when serving assets at runtime.
   # Checks for improperly declared sprockets dependencies.
 # Raises helpful error messages.
-=begin
+
   config.assets.raise_runtime_errors = true
   config.active_record.migration_error = :page_load
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {:address => "localhost", :port => 1025}
-=end
+=begin
 config.action_mailer.perform_deliveries = true
 config.action_mailer.raise_delivery_errors = true
 config.action_mailer.default :charset => "utf-8"
@@ -50,5 +50,5 @@ config.action_mailer.default :charset => "utf-8"
   user_name: "xxxxxxxx@gmail.com",
   password: "xxxxxxx"
 }
-
+=end
 end
