@@ -281,11 +281,11 @@
 // $include-html-nav-classes: $include-html-classes;
 
 // We use this to set the background color for the breadcrumb container.
-// $crumb-bg: scale-color($secondary-color, $lightness: 55%);
+$crumb-bg: scale-color(#987, $lightness: 50%);
 
 // We use these to set the padding around the breadcrumbs.
 // $crumb-padding: rem-calc(9 14 9);
-$crumb-side-padding: rem-calc(14);
+$crumb-side-padding: rem-calc(15);
 
 // We use these to control border styles.
 // $crumb-function-factor: -10%;
@@ -295,8 +295,8 @@ $crumb-side-padding: rem-calc(14);
 // $crumb-radius: $global-radius;
 
 // We use these to set various text styles for breadcrumbs.
- $crumb-font-size: rem-calc(13);
- $crumb-font-color: #568;
+ $crumb-font-size: rem-calc(14);
+ $crumb-font-color: #fff;
  $crumb-font-color-current: #04D3D3;
 // $crumb-font-color-unavailable: #999;
 // $crumb-font-transform: uppercase;
@@ -763,7 +763,7 @@ $crumb-side-padding: rem-calc(14);
 // $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
- $panel-bg: scale-color(#123, $lightness: -5%);
+ $panel-bg: scale-color(#456, $lightness: -5%);
 // $panel-border-style: solid;
 // $panel-border-size: 1px;
 
@@ -776,7 +776,7 @@ $crumb-side-padding: rem-calc(14);
 // $panel-padding: rem-calc(20);
 
 // We use these to set default font colors
-$panel-font-color: #456;
+$panel-font-color: #111;
 // $panel-font-color-alt: #fff;
 
 // $panel-header-adjust: true;
