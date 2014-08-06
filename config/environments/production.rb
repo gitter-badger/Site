@@ -91,7 +91,7 @@ config.action_mailer.default :charset => "utf-8"
   domain: ENV["DOMAIN_NAME"],
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: "@gmail.com",
-  password: ""
+  user_name: "vinodprak@gmail.com",
+  password: "milestone@09"
 }
 end
