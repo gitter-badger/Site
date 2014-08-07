@@ -34,6 +34,7 @@
 <table>
  <thead>
     <tr>
+      <th>Image </th>
       <th>TITLE</th>
       <th>CONTENT</th>
       <% if current_admin.has_role? :admin%>
@@ -44,6 +45,20 @@
 <tbody>
 <% @posts.each do |post| %>
       <tr>
+         <%if post.title=="PrathibaPatel"%>
+        <figure class="car-img-outer center-block">
+         <td> <img width=50 height=50 src="/images/wa/w1.jpg" ></td>
+        </figure>
+        <%elsif post.title=="IndiraGandhi"%>
+         <figure class="car-img-outer center-block">
+           <td> <img width=50 height=50 src="/images/wa/w2.jpg" ></td>
+          </figure>
+           <%elsif post.title=="SarojiniNaidu"%>
+         <figure class="car-img-outer center-block">
+          <td> <img width=50 height=50 src="/images/wa/w3.jpg" ></td>
+         </figure>
+        <%end%>
+
         <td><a href="#" data-reveal-id="<%= post.title%>"><%= post.title %></a></td>
         <td><%= post.content %></td>
         
