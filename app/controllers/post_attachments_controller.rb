@@ -4,7 +4,11 @@ class PostAttachmentsController < ApplicationController
   # GET /post_attachments
   # GET /post_attachments.json
   def index
+   if current_admin.has_role? "admin"
     @post_attachments = PostAttachment.all
+   else 
+    redirect_to trumpet_index_path
+   end
   end
 
   # GET /post_attachments/1
@@ -14,7 +18,11 @@ class PostAttachmentsController < ApplicationController
 
   # GET /post_attachments/new
   def new
+    if current_admin.has_role? "admin"
     @post_attachment = PostAttachment.new
+    else
+    redirect_to women_index_path
+    end
   end
 
   # GET /post_attachments/1/edit
