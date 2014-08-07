@@ -4,8 +4,12 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
+    if current_admin.has_role? "admin" 
     @posts = Post.all
-  end
+    else
+     redirect_to women_index_path
+   end
+    end
  #def check
  #  if admin
  #     @val=admin.has_role? "admin"
@@ -17,24 +21,36 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    if current_admin.has_role? "admin"
         @post_attachments = @post.post_attachments.all
-    
+    else
+        redirect_to women_index_path
+    end
   end
 
   # GET /posts/new
   def new
+   if current_admin.has_role? "admin"
     @post = Post.new
     @post_attachment = @post.post_attachments.build
+   else
+      redirect_to women_index_path
+   end
   end
 
   # GET /posts/1/edit
   def edit
 #    authorize! :edit, Post
-  end
+   if current_admin.has_role? "admin"
+   else 
+     redirect_to women_index_path
+   end 
+ end
 
   # POST /posts
   # POST /posts.json
   def create
+    if current_admin.has_role? "admin"
     @post = Post.new(post_params)
 
     respond_to do |format|
@@ -49,11 +65,15 @@ class PostsController < ApplicationController
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
+    else
+      redirect_to_women_index_path
+    end
   end
 
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
+   if current_admin.has_role? "admin"
     respond_to do |format|
       if @post.update(post_params)
         format.html { redirect_to @post, notice: 'Post was successfully updated.' }
@@ -63,17 +83,25 @@ class PostsController < ApplicationController
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
+   else
+         redirect_to_women_index_path
+   end
   end
 
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
 #     authorize! :destroy, @post
+    if current_admin.has_role? "admin"
     @post.destroy
     respond_to do |format|
       format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
       format.json { head :no_content }
     end
+    else
+          redirect_to_women_index_path
+    end
+
   end
 
   private

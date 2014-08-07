@@ -2,7 +2,7 @@
 <br>
 <section class="small-10 small-centered columns" align = "left">
 <!-- <div class= "panel"> --!>
-<% if current_admin.has_role? :admin%>
+<%# if current_admin.has_role? :admin%>
 <%= form_for(@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
@@ -54,9 +54,7 @@
     <%= f.submit 'Add to mycollection', :class => 'btn btn-medium btn-success'%>
   </div>
 <% end %>
-<%elsif %>
-   <h3>Access Denied</h3>
-<% end %>
+
 <!--</div>--!>
 </section>
 </div>
