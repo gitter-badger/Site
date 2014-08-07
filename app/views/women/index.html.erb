@@ -2,6 +2,9 @@
 <h1 align = "center" >Women achievers</h1>
 <div class= "row">
 <br>
+
+<br>
+<div class="large-12 columns " data-equalizer-watch>
 <section class="small-12 small-centered columns">
 <!-- <div class= "panel"> --!>
 <table>
@@ -16,7 +19,7 @@
 <tbody>
 <% @posts.each do |post| %>
       <tr>
-        <td><a href="#" data-reveal-id="<%= post.title%>" class="btn btn-mini "><%= post.title %></a></td>
+        <td><a href="#" data-reveal-id="<%= post.title%>"><%= post.title %></a></td>
         <td><%= post.content %></td>
         
 <!--     <td><a href="#" data-reveal-id="<%= post.title%>" class ="btn btn-mini btn-success "> More</a></td> --!>
@@ -29,9 +32,9 @@
      </tr>
 </tbody>
 </table>
+</section>
 <br>
 <br>
-
 <div align="left">
 
 
@@ -46,13 +49,16 @@
   <a class="close-reveal-modal">&#215;</a>
 </div>
 
- <div id="SoniaGandhi" class="reveal-modal" data-reveal>
-  <h2>Sonia Gandhi.</h2>
-  
-  <p><code>Sonia Gandhi </code>is an Italian-born Indian politician, who has served as President of the Indian National Congress party since 1998. She is the widow of former Prime Minister of India, Rajiv Gandhi who belonged to the Nehru–Gandhi family. After her husband's assassination in 1991, she was invited by Congress leaders to take over the government but she refused and publicly stayed away from politics amidst constant prodding from the party. She finally agreed to join politics in 1997; in 1998, she was elected President of the Congress party.</p>
+ <div id="SarojiniNaidu" class="reveal-modal" data-reveal>
+  <h2>Sarojini Naidu.</h2>
+  <p>Sarojini naidu was born in Hyderabad to Aghore Nath Chattopadhyay and Barada Sundari Debi on 13 February 1879. Her father, with a doctorate of Science from Edinburgh University, settled in Hyderabad, where he found and administered the Hyderabad College, which later became the Nizam's College in Hyderabad. Her mother was a poetess and used to write poetry in Bengali. She was the eldest among the eight siblings. Her brother Virendranath Chattopadhyaya was a revolutionary and her other brother, Harindranath was a poet, a dramatist, and an actor.</p>
+<p>
+Naidu passed her matriculation examination from the University of Madras, but she took four years' break from her studies. In 1895, the "Nizam scholarship Trust" founded by the 6th Nizam - Mir Mahbub Ali Khan, gave her the chance to study in England first at King's College London and later at Girton College, Cambridge.</p>
+<p>
+Naidu met Govindarajulu Naidu, a doctor by profession, and at the age of 19, after finishing her studies, she got married to him. At this time, inter-caste marriages were not allowed, but her father approved the marriage.</p>
+<p>
+The couple had five children. Her daughter Padmaja became the Governor of West Bengal.</p>
 
-<p>She has served as the Chairperson of the ruling United Progressive Alliance in the Lok Sabha since 2004. She turned down the prayers of her party's rank & file to take over as Prime Minister after articulating Congress party victory in the 2004 Parlaiment elections by stating "My Conscience does not allow me". In September 2010, on being re-elected for the fourth time, she became the longest serving president in the 125-year history of the Congress party. Her foreign birth has been a subject of much debate and controversy. Also controversial was her alleged friendship with Italian businessman Ottavio Quattrocchi, accused of being a middleman in the Bofors scandal. Although Sonia is the fifth foreign-born person to be leader of the Congress Party, she is the first since independence in 1947.</p>
-</p>
   <a class="close-reveal-modal">&#215;</a>
 </div>
 
@@ -69,10 +75,10 @@
   <a class="close-reveal-modal">&#215;</a>
 </div>
 </div>
-
 <% if current_admin.has_role? :admin%>
-<%= link_to 'New Post', new_post_path , :class => 'btn btn-mini btn-success' %>
+<p >
+<%= link_to 'New Post', new_post_path , :class => 'btn btn-medium btn-success' %>
+</p>
 <% end %>
 </div>
-</section>
 </div>
