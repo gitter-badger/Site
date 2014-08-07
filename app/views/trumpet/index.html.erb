@@ -41,6 +41,7 @@
 <table>
  <thead>
     <tr>
+      <th>Images</th>
       <th>TITLE</th>
       <th>CONTENT</th>
      </tr>
@@ -48,6 +49,20 @@
 <tbody>
 <% @posts.each do |post| %>
       <tr>
+       <%if post.title=="SELF-DEFENCE-WORKSHOP"%>
+          <figure class="car-img-outer center-block">
+           <td> <img width=50 height=50 src="/images/sd.jpg" ></td>
+          </figure>
+          <%elsif post.title=="Walkathon"%>
+           <figure class="car-img-outer center-block">
+             <td> <img width=50 height=50 src="/images/walk.jpg" ></td>
+            </figure>
+             <%elsif post.title=="AMUN"%>
+           <figure class="car-img-outer center-block">
+            <td> <img width=50 height=50 src="/images/AMUN.jpg" ></td>
+           </figure>
+          <%end%>
+
         <td><a href="#" data-reveal-id="<%=post.title%>"><%= post.title %></a></td>
         <td><%= post.content %></td>
 
