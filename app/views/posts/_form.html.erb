@@ -1,3 +1,5 @@
+<div class="row">
+  <div class="small-2 large-6 columns">
 <%= form_for @post, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
     <%= f.label :title, :class => 'control-label' %>
@@ -14,31 +16,31 @@
   <div class="control-group">
     <%= f.label :mr, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :mr, :class => 'text_field' %>
+      <%= f.check_box :mr, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :vg, :class => 'control-label' %>
+    <%= f.label :Vogue, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :vg, :class => 'text_field' %>
+      <%= f.check_box :vg, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :tp, :class => 'control-label' %>
+    <%= f.label :Trumpet, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :tp, :class => 'text_field' %>
+      <%= f.check_box :tp, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :wa, :class => 'control-label' %>
+    <%= f.label :Womenachiever, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :wa, :class => 'text_field' %>
+      <%= f.check_box :wa, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :couns, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :couns, :class => 'text_field' %>
+      <%= f.check_box :couns, :class => 'text_field' %>
     </div>
   </div>
 
@@ -48,3 +50,5 @@
                 posts_path, :class => 'btn' %>
   </div>
 <% end %>
+</div>
+</div>

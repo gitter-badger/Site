@@ -1,17 +1,9 @@
-<div class= "row">
-<br>
-<section class="small-6 small-centered columns">
-<!--<div class= "panel">--!>
-<span class="glyphicon glyphicon-plus-sign"><h1 align="center">Editing Post</h1></span>
-<%= render 'form' %>
-<br>
-<br>
-<%= link_to '<- Back', women_index_path, :class => 'btn btn-medium' %> | 
-<%= link_to 'Show ->', @post , :class => 'btn btn-medium' %> 
-
-
-
-
-<!-- </div> --!>
-</section>
+<div class="row">
+  <div class="small-2 large-12 columns">
+<%- model_class = Post -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => model_class.model_name.human.titleize %></h1>
+</div>
+<%= render :partial => 'form' %>
+</div>
 </div>

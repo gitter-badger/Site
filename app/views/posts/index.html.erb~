@@ -1,48 +1,52 @@
-<div class= "row">
-<br>
-<section class="small-14 small-centered columns">
-<div class= "panel">
-<span class="label"><h1>Listing posts</h1></span>
-
-
-<table>
+<div class="row">
+  <div class="small-4 large-12 columns">
+<%- model_class = Post -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>TITLE</th>
-      <th>CONTENT</th>
-      <th>MOVIE REVIEW</th>
-      <th>VOGUE</th>
-      <th>TRUMPET</th>
-      <th>WOMEN ACHIEVERS</th>
-      <th colspan="3"></th>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:title) %></th>
+      <th><%= model_class.human_attribute_name(:content) %></th>
+      <th><%= model_class.human_attribute_name(:mr) %></th>
+      <th><%= model_class.human_attribute_name(:vg) %></th>
+      <th><%= model_class.human_attribute_name(:tp) %></th>
+      <th><%= model_class.human_attribute_name(:wa) %></th>
+      <th><%= model_class.human_attribute_name(:couns) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
-
-<tbody>
+  <tbody>
     <% @posts.each do |post| %>
       <tr>
+        <td><%= link_to post.id, post_path(post) %></td>
         <td><%= post.title %></td>
         <td><%= post.content %></td>
         <td><%= post.mr %></td>
         <td><%= post.vg %></td>
         <td><%= post.tp %></td>
         <td><%= post.wa %></td>
-        <td><%= link_to 'Show', post %></td>
-         <% if current_admin.has_role? :admin%>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, class: "btn btn-danger", data: { confirm: 'Are you sure?' } , :class => 'btn btn-mini btn-danger'%></td>
-        <% end %>
+        <td><%= post.couns %></td>
+        <td><%=l post.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_post_path(post), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      post_path(post),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
       </tr>
     <% end %>
-  
   </tbody>
 </table>
 
-<br>
-<% if current_admin.has_role? :admin%>
-<%= link_to 'New Post', new_post_path , :class => 'btn btn-mini btn-success' %>
-<% end %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_post_path,
+            :class => 'btn btn-primary' %>
 </div>
-</div>
-</section>
 </div>
