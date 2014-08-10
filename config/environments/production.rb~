@@ -79,7 +79,8 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
-  ActionMailer::Base.perform_deliveries = true
+=begin
+ActionMailer::Base.perform_deliveries = true
 ActionMailer::Base.raise_delivery_errors = true
 config.action_mailer.default_url_options = { :host => '54.255.136.160:3000' }  
 config.active_record.dump_schema_after_migration = false
@@ -93,5 +94,7 @@ ActionMailer::Base.smtp_settings = {
 	:user_name => "vinodprak@gmail.com",
 	:password=>"milestone@09",
 	:enable_starttls_auto => true,
-	:openssl_verify_mode  => 0 }
+	:openssl_verify_mode  => 0 
+}
+=end
 end
