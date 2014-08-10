@@ -1,7 +1,7 @@
 <div class= "row">
 <br>
 <section class="small-10 small-centered columns">
-<div class= "panel">
+<!-- <div class= "panel"> --!>
 
 <p id="notice"><%= notice %></p>
 <p align = "centre"> <h2>Movie Details</h2> </p>
@@ -46,7 +46,7 @@
 |
 <% end %>
 
-<%= link_to 'Back',women_index_path , :class => 'navbar-link' , :class => 'btn btn-mini' %> |
+<%= link_to 'Back',women_index_path , :class => 'navbar-link' , :class => 'btn btn-mini' %> 
 
 
 </div>

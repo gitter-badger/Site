@@ -22,11 +22,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-#    if current_admin.has_role? "admin"
         @post_attachments = @post.post_attachments.all
- #   else
-        redirect_to women_index_path
- #   end
   end
 
   # GET /posts/new

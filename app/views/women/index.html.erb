@@ -61,13 +61,12 @@
 
         <td><a href="#" data-reveal-id="<%= post.title%>"><%= post.title %></a></td>
         <td><%= post.content %></td>
-        
 <!--     <td><a href="#" data-reveal-id="<%= post.title%>" class ="btn btn-mini btn-success "> More</a></td> --!>
       <% if current_admin.has_role? :admin%>
 
-       <td><%= link_to 'Show', post , :class => 'btn btn-mini '%></td>
+       <td><%= link_to 'Show', post , :class => 'btn btn-mini'%></td>
 	<td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , :class => 'btn btn-mini btn-danger'%></td>
-<% end %> </td>
+<% end %> 
     <% end %>
 
      </tr>

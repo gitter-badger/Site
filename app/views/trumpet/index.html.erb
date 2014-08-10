@@ -49,7 +49,7 @@
 <tbody>
 <% @posts.each do |post| %>
       <tr>
-       <%if post.title=="SELF-DEFENCE-WORKSHOP"%>
+       <%if post.title=="Self-Defence-Workshop"%>
           <figure class="car-img-outer center-block">
            <td> <img width=50 height=50 src="/images/sd.jpg" ></td>
           </figure>
@@ -61,6 +61,13 @@
            <figure class="car-img-outer center-block">
             <td> <img width=50 height=50 src="/images/AMUN.jpg" ></td>
            </figure>
+            <%elsif post.title=="GivingWeek"%>
+             <figure class="car-img-outer center-block">
+              <td> <img width=50 height=50 src="/images/jog/joglog.jpg" ></td>
+             </figure>
+             <%else%>
+                <td><img width=50 height=50 src="/images/aakrithi.jpg" ></td>        
+
           <%end%>
 
         <td><a href="#" data-reveal-id="<%=post.title%>"><%= post.title %></a></td>
@@ -96,6 +103,7 @@ The cause for this event was to help the Naam foundation headed by Mrs.Suhasini,
 The Naam foundation mentors and motivates single women to stand on their own feet. Nearly 50 colleges and 500 delegates participated in the event.
 </p>
   <a class="close-reveal-modal">&#215;</a>
+<%=link_to 'View Gallery' ,gallery_path , :class => 'navbar-link' , :class => 'btn btn-medium btn-success' %>
 </div>
 
 
@@ -107,21 +115,28 @@ The Naam foundation mentors and motivates single women to stand on their own fee
 T-Shirts emphasizing the importance of women’s literacy were worn by the college girls. The Walkathon started from Gandhi statue and terminated at the Anna Memorial. The Walkathon had a turnout of about 600 people. The Walkathon oath was taken by T.Abinaya, Aakriti founder along with the team members. The highlight of the Walkathon was graffiti by Aakriti Team at Besant Nagar Road. The media partner for this event was Makkal TV. </p>
 
 <ul class="clearing-thumbs" data-clearing>
-  <li><a href="/images/walk.jpg"><img width=100 height =100 src="/images/walk.jpg"></a></li>
-  <li><a href="/images/walk1.jpg"><img width=100 height =100 src="/images/walk1.jpg"></a></li>
-  <li><a href="/images/walk2.jpg"><img width=100 height =100 src="/images/walk2.jpg"></a></li>
-  <li><a href="/images/walk3.jpg"><img width=100 height =100 src="/images/walk3.jpg"></a></li>
+  <li><img width=100 height =100 src="/images/walk.jpg"></li>
+  <li><img width=100 height =100 src="/images/walk1.jpg"></li>
+  <li><img width=100 height =100 src="/images/walk2.jpg"></li>
+  <li><img width=100 height =100 src="/images/walk3.jpg"></li>
 </ul>
-
-
-
-
+<%=link_to 'View Gallery' ,gallery_path , :class => 'navbar-link' , :class => 'btn btn-medium btn-success' %>
   <a class="close-reveal-modal">&#215;</a>
 </div>
 
+<div id="GivingWeek" class="reveal-modal" data-reveal>
+  <h2>AAKRITI --- Joy of Giving Week !:</h2>
+ <ul class="clearing-thumbs" data-clearing>
+   <li><img width=150 height =150 src="/images/jog/jog1.jpg"></li>
+   <li><img width=150 height =150 src="/images/jog/jog3.jpg"></li>
+   <li><img width=150 height =150 src="/images/jog/jog4.jpg"></li>
+ </ul>
+<%=link_to 'View Gallery' ,gallery_path , :class => 'navbar-link' , :class => 'btn btn-medium btn-success' %> 
+   <a class="close-reveal-modal">&#215;</a>
+ </div>
 
 
-<div id="SELF-DEFENCE-WORKSHOP" class="reveal-modal" data-reveal>
+<div id="Self-Defence-Workshop" class="reveal-modal" data-reveal>
  <h2>SELF-DEFENCE WORKSHOP:</h2>
   <p>Aakriti in collaboration with survival instincts conducted self defense workshop for the girls of CEG on 18th October 2013. Mr.AnoopMadhavan, CEO of survival instincts and his intern Steffy came and conducted the workshop. The girls were taught the difference between knowing martial arts and the basic stances for protecting themselves. It was ensured that all the girls realised it is not important to know martial arts to protect oneself when situation arises.
 </p>
@@ -129,10 +144,10 @@ T-Shirts emphasizing the importance of women’s literacy were worn by the colle
 There are four main self-defence strategies- psychological, technical, legal and physical. Mr.Anoop explained all these strategies with the help of a few girls. He laid importance on the most important step in self-defence- ESCAPE. He clearly explained that despite all best efforts, the smartest thing to do would be to leave the place immediately.</p>
 <p>The girls were given a feedback form after the session. The session was conducted successfully with all the girls having learnt about self-defence.</p>
 
+
 <ul class="clearing-thumbs" data-clearing>
-  <li><a href="/images/sd.jpg"><img width=100 height =100 src="/images/sd.jpg"></a></li>
-  
-</ul>
+  <li><img width=100 height =100 src="/images/sd.jpg"></li>
+<%=link_to 'View Gallery' ,gallery_path , :class => 'navbar-link' , :class => 'btn btn-medium btn-success' %></ul>
 
 
 

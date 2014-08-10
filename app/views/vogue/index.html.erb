@@ -4,7 +4,7 @@
 <br>
 <section class="small-10 small-centered columns">
 <!--<div class= "panel">--!>
-<table>
+ <table>
 
 <thead>
     <tr>
@@ -17,14 +17,14 @@
 <tbody>
 
 <% @posts.each do |post| %>
-      <tr>
-     <td> <%= post.title %></td>
-     <td> <%= post.content %></td>
+ <tr>
+     <td><%= post.title %></td>
+   <td>  <%= post.content %></td>
         
-     <td><a href="#" data-reveal-id="<%= post.title%>" class ="btn btn-mini btn-success "> More</a></td>
-     <td><%= link_to 'Show', post , :class => 'btn btn-mini '%></td>
+<td>     <a href="#" data-reveal-id="<%= post.title%>" class ="btn btn-mini btn-success "> More</a></td>
+     <%= link_to 'Show', post , :class => 'btn btn-mini '%></td>
        <% if current_admin.has_role? :admin%>
-     <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , :class => 'btn btn-mini btn-danger'%>
+    <td> <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , :class => 'btn btn-mini btn-danger'%>
 <% end %> </td>
     <% end %>
 

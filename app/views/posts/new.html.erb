@@ -1,14 +1,5 @@
-<div class= "row">
-  <br>
-  <section class="small-10 small-centered columns">
-  <!-- <div class= "panel"> --!>
- 
- <p id="notice"><%= notice %></p>
- <p align = "centre"> <h2>New Post</h2> </p>
-
-<%= render 'form' %>
-<p >
-<%= link_to 'Back', women_index_path, :class => 'btn btn-medium' %>
-</p>
-</section>
+<%- model_class = Post -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h1>
 </div>
+<%= render :partial => 'form' %>

@@ -12,6 +12,13 @@
   <li><a href="/images/walk2.jpg"><img width =150 height =150 src="/images/walk2.jpg"></a></li>
   <li><a href="/images/walk3.jpg"><img width =150 height =150 src="/images/walk3.jpg"></a></li>
 </ul>
+<br>
+<h2>Joy of Giving Week</h2>
+<ul class="clearing-thumbs" data-clearing>
+ <li><img width=150 height =150 src="/images/jog/jog1.jpg"></li>
+    <li><img width=150 height =150 src="/images/jog/jog3.jpg"></li>
+    <li><img width=150 height =150 src="/images/jog/jog4.jpg"></li>
+</ul>
 
 
 
