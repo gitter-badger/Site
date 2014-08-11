@@ -66,4 +66,5 @@ end
 
 gem 'less-rails-bootstrap'
 gem 'mailcatcher'
+gem 'mandrill-rails'
 
