@@ -112,5 +112,5 @@ ActionMailer::Base.smtp_settings = {
 	:password=>"milestone@1645",
 	:enable_starttls_auto => true,
 	:openssl_verify_mode  => 0 }
-	end
+
 end
