@@ -79,22 +79,21 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
-=begin
-ActionMailer::Base.perform_deliveries = true
-ActionMailer::Base.raise_delivery_errors = true
-config.action_mailer.default_url_options = { :host => '54.255.136.160:3000' }  
-config.active_record.dump_schema_after_migration = false
-ActionMailer::Base.delivery_method = :smtp
-ActionMailer::Base.smtp_settings = {
-	:tls => false,
-	:address => "smtp.gmail.com",
-	:port => "587",
-	:domain => "gmail.com",
-	:authentication => :plain, 
-	:user_name => "vinodprak@gmail.com",
-	:password=>"milestone@09",
-	:enable_starttls_auto => true,
-	:openssl_verify_mode  => 0 
+
+
+config.action_mailer.default_url_options = { :host => 'aakrithi-ceg.herokuapp.com' }
+# ActionMailer Config
+# Setup for production - deliveries, no errors raised
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = false
+config.action_mailer.default :charset => "utf-8"
+
+config.action_mailer.smtp_settings = {
+  :address   => "smtp.mandrillapp.com",
+  :port      => 25,
+  :user_name => ENV["psvinodprakash"],
+  :password  => ENV["n3yAt2WJpK-KZ0vw6T4_ew"]
 }
-=end
+
 end

@@ -16,9 +16,8 @@
      <%= render '/layouts/topbar'%>
    </header>
         <%= render '/layouts/message'%>
-     <% if admin_signed_in?  %>  
-     <%= render '/layouts/breedcrumbs'%>
-     <% end %>
+       <%= render '/layouts/breedcrumbs'%>
+    
       
     <%= yield %>
     <%= javascript_include_tag "application" %>

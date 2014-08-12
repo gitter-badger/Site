@@ -32,7 +32,6 @@ Rails.application.configure do
 # Raises helpful error messages.
 
   config.assets.raise_runtime_errors = true
-
  config.active_record.migration_error = :page_load
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
@@ -48,8 +47,8 @@ config.action_mailer.default :charset => "utf-8"
   domain: ENV["DOMAIN_NAME"],
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: "xxxxxxxx@gmail.com",
-  password: "xxxxxxx"
+  user_name: "vinodprak@gmail.com",
+  password: "milestone@09"
 }
 =end
 end
