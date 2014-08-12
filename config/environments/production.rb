@@ -78,9 +78,9 @@ Rails.application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  # Do not dump schema after migrations.
+  # Do notump schema after migrations.
 
-
+=begin
 config.action_mailer.default_url_options = { :host => 'aakrithi-ceg.herokuapp.com' }
 # ActionMailer Config
 # Setup for production - deliveries, no errors raised
@@ -95,5 +95,22 @@ config.action_mailer.smtp_settings = {
   :user_name => ENV["psvinodprakash"],
   :password  => ENV["n3yAt2WJpK-KZ0vw6T4_ew"]
 }
+=end
 
+ActionMailer::Base.perform_deliveries = true
+ActionMailer::Base.raise_delivery_errors = true
+config.action_mailer.default_url_options = { :host => 'aakrithi-ceg.herokuapp.com' }  
+config.active_record.dump_schema_after_migration = false
+ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.smtp_settings = {
+	:tls => false,
+	:address => "smtp.gmail.com",
+	:port => "587",
+	:domain => "gmail.com",
+	:authentication => :plain, 
+	:user_name => "vinodprak@gmail.com",
+	:password=>"milestone@1645",
+	:enable_starttls_auto => true,
+	:openssl_verify_mode  => 0 }
+	end
 end
