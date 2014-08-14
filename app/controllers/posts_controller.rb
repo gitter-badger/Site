@@ -6,10 +6,10 @@ class PostsController < ApplicationController
   def index
     if current_admin.has_role? "admin" 
     @posts = Post.all
-    else
-    flash[:error] = "Access denied."
-     redirect_to women_index_path
-   end
+     else
+       redirect_to women_index_path
+        
+     end
     end
  #def check
  #  if admin
@@ -39,7 +39,8 @@ class PostsController < ApplicationController
   def edit
 #    authorize! :edit, Post
    if current_admin.has_role? "admin"
-   else 
+   else
+    flash[:alert] = "Error! Access Denied" 
      redirect_to women_index_path
    end 
  end

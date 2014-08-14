@@ -59,7 +59,7 @@
          </figure>
         <%end%>
 
-        <td><a href="#" data-reveal-id="<%= post.title%>"><%= post.title %></a></td>
+        <td><a href="#" data-reveal-id="<%= post.title%>" class = "btn btn-link"><%= post.title %></a></td>
         <td><%= post.content %></td>
 <!--     <td><a href="#" data-reveal-id="<%= post.title%>" class ="btn btn-mini btn-success "> More</a></td> --!>
       <% if current_admin.has_role? :admin%>
