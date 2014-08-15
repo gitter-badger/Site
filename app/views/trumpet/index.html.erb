@@ -5,25 +5,25 @@
       
   <ul class="example-orbit" data-orbit>
      <li>
-        <img width =500 height=800 src="/images/AMUN.jpg" alt="slide 1" />
+        <img width =1700 height=1900 src="/images/AMUN.jpg" alt="slide 1" />
         <div class="orbit-caption">
          AMUN
         </div>
       </li>
       <li class="active">
-        <img  width =500 height=800 src="/images/walk.jpg" alt="slide 2" />
+        <img  width =1700 height=1900 src="/images/walk/w.jpg" alt="slide 2" />
         <div class="orbit-caption">
           Walkathon
        </div>
      </li>
      <li>
-      <img  width =500 height=800 src="/images/walk1.jpg" alt="slide 2" />
+      <img  width =1700 height=1900 src="/images/walk/w1.jpg" alt="slide 2" />
        <div class="orbit-caption">
          Walkathon 1
        </div>
      </li>
      <li>
-       <img  width =500 height=800 src="/images/walk2.jpg" alt="slide 2" />
+       <img  width =1700 height=1900 src="/images/walk/w2.jpg" alt="slide 2" />
         <div class="orbit-caption">
           Walkathon 2
         </div>
@@ -33,7 +33,7 @@
  </div>  
  </div>
 
-<br>
+<br> <br><br><br><br><br><br><br><br><br>
 <div class="large-12 columns " data-equalizer-watch>
 
 <section class="small-12 small-centered columns">
@@ -55,7 +55,7 @@
           </figure>
           <%elsif post.title=="Walkathon"%>
            <figure class="car-img-outer center-block">
-             <td> <img width=50 height=50 src="/images/walk.jpg" ></td>
+             <td> <img width=50 height=50 src="/images/walk/w1.jpg" ></td>
             </figure>
              <%elsif post.title=="AMUN"%>
            <figure class="car-img-outer center-block">
@@ -63,14 +63,14 @@
            </figure>
             <%elsif post.title=="GivingWeek"%>
              <figure class="car-img-outer center-block">
-              <td> <img width=50 height=50 src="/images/jog/joglog.jpg" ></td>
+              <td> <img width=50 height=50 src="/images/jog/6.jpg" ></td>
              </figure>
              <%else%>
                 <td><img width=50 height=50 src="/images/aakrithi.jpg" ></td>        
 
           <%end%>
 
-        <td><a href="#" data-reveal-id="<%=post.title%>"><%= post.title %></a></td>
+        <td><a href="#" data-reveal-id="<%=post.title%>" class = "btn btn-link"><%= post.title %></a></td>
         <td><%= post.content %></td>
 
        
@@ -115,10 +115,13 @@ The Naam foundation mentors and motivates single women to stand on their own fee
 T-Shirts emphasizing the importance of women’s literacy were worn by the college girls. The Walkathon started from Gandhi statue and terminated at the Anna Memorial. The Walkathon had a turnout of about 600 people. The Walkathon oath was taken by T.Abinaya, Aakriti founder along with the team members. The highlight of the Walkathon was graffiti by Aakriti Team at Besant Nagar Road. The media partner for this event was Makkal TV. </p>
 
 <ul class="clearing-thumbs" data-clearing>
-  <li><img width=100 height =100 src="/images/walk.jpg"></li>
-  <li><img width=100 height =100 src="/images/walk1.jpg"></li>
-  <li><img width=100 height =100 src="/images/walk2.jpg"></li>
-  <li><img width=100 height =100 src="/images/walk3.jpg"></li>
+  <li><img width=100 height =100 src="/images/walk/w1.jpg"></li>
+  <li><img width=100 height =100 src="/images/walk/w2.jpg"></li>
+  <li><img width=100 height =100 src="/images/walk/w3.jpg"></li>
+  <li><img width=100 height =100 src="/images/walk/w4.jpg"></li>
+  <li><img width=100 height =100 src="/images/walk/w5.jpg"></li>
+  <li><img width=100 height =100 src="/images/walk/w6.jpg"></li>
+  <li><img width=100 height =100 src="/images/walk/w7.jpg"></li>
 </ul>
 <%=link_to 'View Gallery' ,gallery_path , :class => 'navbar-link' , :class => 'btn btn-medium btn-success' %>
   <a class="close-reveal-modal">&#215;</a>
@@ -127,9 +130,9 @@ T-Shirts emphasizing the importance of women’s literacy were worn by the colle
 <div id="GivingWeek" class="reveal-modal" data-reveal>
   <h2>AAKRITI --- Joy of Giving Week !:</h2>
  <ul class="clearing-thumbs" data-clearing>
-   <li><img width=150 height =150 src="/images/jog/jog1.jpg"></li>
-   <li><img width=150 height =150 src="/images/jog/jog3.jpg"></li>
-   <li><img width=150 height =150 src="/images/jog/jog4.jpg"></li>
+   <li><img width=150 height =150 src="/images/jog/1.jpg"></li>
+   <li><img width=150 height =150 src="/images/jog/3.jpg"></li>
+   <li><img width=150 height =150 src="/images/jog/4.jpg"></li>
  </ul>
 <%=link_to 'View Gallery' ,gallery_path , :class => 'navbar-link' , :class => 'btn btn-medium btn-success' %> 
    <a class="close-reveal-modal">&#215;</a>
