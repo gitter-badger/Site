@@ -20,7 +20,7 @@ Rails.application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = false
+  config.serve_static_assets = true
   #config.gem "cancan"
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -96,7 +96,7 @@ config.action_mailer.smtp_settings = {
   :password  => ENV["n3yAt2WJpK-KZ0vw6T4_ew"]
 }
 =end
-
+=begin
 ActionMailer::Base.perform_deliveries = true
 ActionMailer::Base.raise_delivery_errors = true
 config.action_mailer.default_url_options = { :host => 'aakrithi-ceg.herokuapp.com' }  
@@ -113,4 +113,6 @@ ActionMailer::Base.smtp_settings = {
 	:enable_starttls_auto => true,
 	:openssl_verify_mode  => 0 }
 
+=end
 end
+

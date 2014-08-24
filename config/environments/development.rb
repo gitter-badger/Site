@@ -27,16 +27,19 @@ Rails.application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  config.assets.raise_runtime_errors = true
   # Adds additional error checking when serving assets at runtime.
   # Checks for improperly declared sprockets dependencies.
 # Raises helpful error messages.
 =begin
   config.assets.raise_runtime_errors = true
  config.active_record.migration_error = :page_load
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {:address => "localhost", :port => 1025}
 =end
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  config.action_mailer.delivery_method = :smtp
+ # config.action_mailer.smtp_settings = {:host => 'localhost:3000'}
+config.action_mailer.smtp_settings = {:address => "localhost", :port => 1025}
 config.action_mailer.perform_deliveries = true
 config.action_mailer.raise_delivery_errors = true
 config.action_mailer.default :charset => "utf-8"
@@ -47,7 +50,7 @@ config.action_mailer.default :charset => "utf-8"
   domain: ENV["DOMAIN_NAME"],
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: "vinodprak@gmail.com",
-  password: "milestone@1645"
+  user_name: "vinodprakashceg@gmail.com",
+  password: "poiasdmnbqwelkjzxc927183"
 }
 end
