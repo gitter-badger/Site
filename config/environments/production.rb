@@ -12,7 +12,7 @@ Rails.application.configure do
   config.i18n.fallbacks = true
   config.active_support.deprecation = :notify
   config.log_formatter = ::Logger::Formatter.new
- config.action_mailer.default_url_options = { :host => 'http://karuppukannadichangehere' }
+ config.action_mailer.default_url_options = { :host => 'http://aakrithi-ceg.herokuapp.com' }
  ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.raise_delivery_errors = true
 ActionMailer::Base.perform_deliveries = true
