@@ -218,7 +218,7 @@
 // $include-html-accordion-classes: $include-html-classes;
 
 // $accordion-navigation-padding: rem-calc(16);
- $accordion-navigation-bg-color: #123456  ;
+ $accordion-navigation-bg-color: #ddd  ;
 // $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
 // $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
  $accordion-navigation-font-color: #aaa;
@@ -281,7 +281,7 @@
 // $include-html-nav-classes: $include-html-classes;
 
 // We use this to set the background color for the breadcrumb container.
-$crumb-bg: scale-color(#987, $lightness: 50%);
+$crumb-bg: scale-color(#ebebeb, $lightness: 50%);
 
 // We use these to set the padding around the breadcrumbs.
 // $crumb-padding: rem-calc(9 14 9);
@@ -763,7 +763,7 @@ $crumb-side-padding: rem-calc(15);
 // $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
- $panel-bg: scale-color(#456, $lightness: -5%);
+ $panel-bg: scale-color(#eeeeee, $lightness: -5%);
 // $panel-border-style: solid;
 // $panel-border-size: 1px;
 

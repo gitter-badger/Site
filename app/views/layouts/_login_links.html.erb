@@ -1,11 +1,8 @@
 <li class="has-dropdown">
 <% if admin_signed_in?  %>
         <a>
-     <button type="button" class="btn btn-default btn-lg">
-                   <span class="glyphicon glyphicon-user"></span>
-          
 
-          <%= current_admin.email %></button></a>
+          <%= current_admin.email %></a>
 <% else %>
         <a>Login</a>
 <%end%>

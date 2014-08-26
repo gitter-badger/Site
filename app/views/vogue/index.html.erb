@@ -1,36 +1,25 @@
 
-<h1 align = "center" >Vogue</h1>
+
 <div class= "row">
 <br>
 <section class="small-10 small-centered columns">
 <!--<div class= "panel">--!>
- <table>
-
-<thead>
-    <tr>
-      <th>TITLE</th>
-      <th>CONTENT</th>
-      <th>More</th>
-      <th colspan="3"></th>
-     </tr>
-  </thead>
-<tbody>
-
-<% @posts.each do |post| %>
- <tr>
-     <td><%= post.title %></td>
-   <td>  <%= post.content %></td>
+ 
+<div id="app-content">
+    <h2 class="page-header">Events </h2>
+       <% @posts.each do |post| %>
+        <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-2"><a href="#" data-reveal-id="<%= post.title%>" class = "btn btn-link"><%= post.title %></a></div>  
+        <div class="col-md-6"><%= post.content %></div>  
+        <% if current_admin.has_role? :admin%>
+        <div class="col-md-1"><%= link_to 'Show', post %></div>
         
-<td>     <a href="#" data-reveal-id="<%= post.title%>" class ="btn btn-mini btn-success "> More</a></td>
-     <%= link_to 'Show', post , :class => 'btn btn-mini '%></td>
-       <% if current_admin.has_role? :admin%>
-    <td> <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , :class => 'btn btn-mini btn-danger'%>
-<% end %> </td>
-    <% end %>
-
-     </tr>
-</tbody>
-</table>
+        <div class="col-md-1"><%= link_to 'Remove', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+       <%end%>
+      </div>
+       <%end%>
 <br>
 <br>
 

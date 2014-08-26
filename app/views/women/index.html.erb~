@@ -1,37 +1,74 @@
 <meta http-equi="refresh" content="5" />
-<h1 align = "center" >Women achievers</h1>
+
 <div class= "row">
 <br>
+<div class="large-4 columns" data-equalizer-watch>
+<div class-"panel">
 
+<ul class="example-orbit" data-orbit>
+    <li>
+      <img width =500 height=500 src="/images/wa/w1.jpg" alt="slide 1" />
+      <div class="orbit-caption">
+        Prathiba Patel
+      </div>
+    </li>
+    <li class="active">
+      <img  width =500 height=500 src="/images/wa/w2.jpg" alt="slide 2" />
+      <div class="orbit-caption">
+        Indira Gandhi
+      </div>
+    </li>
+    <li>
+      <img  width =500 height=500 src="/images/wa/w3.jpg" alt="slide 2" />
+      <div class="orbit-caption">
+        Sarojini Naidu
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
 <br>
 <div class="large-12 columns " data-equalizer-watch>
 <section class="small-12 small-centered columns">
 <!-- <div class= "panel"> --!>
-<table>
- <thead>
-    <tr>
-      <th>TITLE</th>
-      <th>CONTENT</th>
-      <th>More</th>
-      <th colspan="3"></th>
-     </tr>
-  </thead>
-<tbody>
-<% @posts.each do |post| %>
-      <tr>
-        <td><a href="#" data-reveal-id="<%= post.title%>"><%= post.title %></a></td>
-        <td><%= post.content %></td>
-        
-<!--     <td><a href="#" data-reveal-id="<%= post.title%>" class ="btn btn-mini btn-success "> More</a></td> --!>
-       <td><%= link_to 'Show', post , :class => 'btn btn-mini '%></td>
-       <% if current_admin.has_role? :admin%>
-	<td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , :class => 'btn btn-mini btn-danger'%></td>
-<% end %> </td>
-    <% end %>
 
-     </tr>
-</tbody>
-</table>
+
+<div id="app-content">
+    <h2 class="page-header">Women Achivers</h2>
+       <% @posts.each do |post| %>
+        <div class="row">
+        <div class="col-md-1"><%if post.title=="PrathibaPatel"%>
+        <figure class="car-img-outer center-block">
+         <td> <img width=50 height=50 src="/images/wa/w1.jpg" ></td>
+        </figure>
+        <%elsif post.title=="IndiraGandhi"%>
+         <figure class="car-img-outer center-block">
+           <td> <img width=50 height=50 src="/images/wa/w2.jpg" ></td>
+          </figure>
+           <%elsif post.title=="SarojiniNaidu"%>
+         <figure class="car-img-outer center-block">
+          <td> <img width=50 height=50 src="/images/wa/w3.jpg" ></td>
+         </figure>
+	   <%elsif post.title=="OprahWinfrey"%>
+         <figure class="car-img-outer center-block">
+          <td><img width=50 height=50 src="/images/wa/oprah.jpg" ></td>
+	 </figure>
+          <%else%>
+          <figure class="car-img-outer center-block">
+           <td><img width=50 height=50 src="/images/wa/noimage.jpg" ></td>
+          </figure>
+
+        <%end%>
+        </div>
+        <div class="col-md-2"><a href="#" data-reveal-id="<%= post.title%>" class = "btn btn-link"><%= post.title %></a></div>  
+        <div class="col-md-4"><%= post.content %></div>  
+        <% if current_admin.has_role? :admin%>
+        <div class="col-md-1"><%= link_to 'Show', post %></div>
+        
+        <div class="col-md-1"><%= link_to 'Remove', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+       <%end%>
+      </div>
+       <%end%>
 </section>
 <br>
 <br>
@@ -40,6 +77,15 @@
 
 
 <!-- Reveal Modals begin -->
+<div id="OprahWinfrey" class="reveal-modal" data-reveal>
+   <h2>OprahWinfrey</h2>
+  <p><code>“Oprah Winfrey” </code> reminds us of hard work and determination. She has been through all possible struggles in her life. Yet, her determination has motivated her to be what she is today.</p> 
+<p>Born to unwed teenage parents in Mississippi, this media mogul wore dresses that her grandmother made out of potato sacks. After being molested, she run away at the age of 13 and became a mother at 14, but her son died in infancy. But this didn’t deter her courage. Sent to live with his father, a barber in Tennessee, she got a full scholarship in college, won a beauty pageant and was discovered by a radio station. Her empire is now worth $2.7 billion which she shares with the world through her philanthropic works.</p> 
+<p>She had proved the world that women are in no way inferior to men. Winfrey's open, warm-
+hearted personal style had won her a million hearts.</p>
+   <a class="close-reveal-modal">&#215;</a>
+ </div>
+
 <div id="PrathibaPatel" class="reveal-modal" data-reveal>
   <h2>PrathibaPatel.</h2>
   

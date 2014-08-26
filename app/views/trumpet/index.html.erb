@@ -1,4 +1,4 @@
-<h2 align = "center"  class="heading">Events</h2>
+
 <div class= "row">
 <div class="large-4 columns" data-equalizer-watch>
   <div class-"panel">
@@ -36,20 +36,12 @@
 <br> <br><br><br><br><br><br><br><br><br>
 <div class="large-12 columns " data-equalizer-watch>
 
-<section class="small-12 small-centered columns">
-<!--<div class= "panel"> --!>
-<table>
- <thead>
-    <tr>
-      <th>Images</th>
-      <th>TITLE</th>
-      <th>CONTENT</th>
-     </tr>
-  </thead>
-<tbody>
-<% @posts.each do |post| %>
-      <tr>
-       <%if post.title=="Self-Defence-Workshop"%>
+
+<div id="app-content">
+    <h2 class="page-header">Events </h2>
+       <% @posts.each do |post| %>
+        <div class="row">
+        <div class="col-md-1"><%if post.title=="Self-Defence-Workshop"%>
           <figure class="car-img-outer center-block">
            <td> <img width=50 height=50 src="/images/sd.jpg" ></td>
           </figure>
@@ -74,16 +66,17 @@
                 <td><img width=50 height=50 src="/images/aakrithi.jpg" ></td>        
 
           <%end%>
+        </div>
+        <div class="col-md-2"><a href="#" data-reveal-id="<%= post.title%>" class = "btn btn-link"><%= post.title %></a></div>  
+        <div class="col-md-6"><%= post.content %></div>  
+        <% if current_admin.has_role? :admin%>
+        <div class="col-md-1"><%= link_to 'Show', post %></div>
+        
+        <div class="col-md-1"><%= link_to 'Remove', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+       <%end%>
+      </div>
+       <%end%>
 
-        <td><a href="#" data-reveal-id="<%=post.title%>" class = "btn btn-link"><%= post.title %></a></td>
-        <td><%= post.content %></td>
-
-       
-    <% end %>
-
-     </tr>
-</tbody>
-</table>
 <br>
 <br>
 
