@@ -3,7 +3,6 @@
 <div class= "row">
 <br>
 <div class="large-4 columns" data-equalizer-watch>
-<div class-"panel">
 
 <ul class="example-orbit" data-orbit>
     <li>
@@ -25,7 +24,6 @@
       </div>
     </li>
   </ul>
-</div>
 </div>
 <br>
 <div class="large-12 columns " data-equalizer-watch>
@@ -60,7 +58,7 @@
 
         <%end%>
         </div>
-        <div class="col-md-2"><a href="#" data-reveal-id="<%= post.title%>" class = "btn btn-link"><%= post.title %></a></div>  
+        <div class="col-md-2"><a href="#" data-reveal-id="<%= post.title%>" class = "btn btn-mini"><%= post.title %></a></div>  
         <div class="col-md-7"><%= post.content %></div>  
         <% if current_admin.has_role? :admin%>
         <div class="col-md-1"><%= link_to 'Show', post %></div>

@@ -281,7 +281,7 @@
 // $include-html-nav-classes: $include-html-classes;
 
 // We use this to set the background color for the breadcrumb container.
-$crumb-bg: scale-color(#ebebeb, $lightness: 50%);
+$crumb-bg: scale-color(#bfbfbf, $lightness: 50%);
 
 // We use these to set the padding around the breadcrumbs.
 // $crumb-padding: rem-calc(9 14 9);
@@ -296,7 +296,7 @@ $crumb-side-padding: rem-calc(15);
 
 // We use these to set various text styles for breadcrumbs.
  $crumb-font-size: rem-calc(14);
- $crumb-font-color: #fff;
+ $crumb-font-color: #000000;
  $crumb-font-color-current: #04D3D3;
 // $crumb-font-color-unavailable: #999;
 // $crumb-font-transform: uppercase;
@@ -1124,7 +1124,7 @@ $panel-font-color: #111;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
- $topbar-bg-color: #AD1C03;
+ $topbar-bg-color: #111111;
  $topbar-bg: $topbar-bg-color;
 
 // Height and margin
