@@ -87,16 +87,11 @@
                     <img class="img-responsive" src="images/walk/w7.jpg" alt="">
                 </a>
             </div>
+            
+
         </div>
 
-        <ul class="pagination">
-  <li><a href="/gallery">&laquo;</a></li>
-  <li><a href="/gallery">1</a></li>
-  <li><a href="/gallery1">2</a></li>
-  
-  <li><a href="/gallery1">&raquo;</a></li>
-</ul>
-
+<%= render '/home/page'%>
 
 
     </div>
