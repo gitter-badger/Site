@@ -4,11 +4,11 @@
         <div class="carousel-inner">
             <div class="item active">
 
-                <img alt="Bootstrap template" src="http://placehold.it/1200x400/ffffff/E23434&text=Aakriti">
+                <img alt="Bootstrap template" src="http://placehold.it/1200x400/ebebeb/E23434&text=Aakriti">
 
                 <div class="carousel-caption">
 
-                    <h3><img width=50 height=50 src="/images/a1.jpg">Aakriti</h3>
+                    <h3>Aakriti</h3>
                     <p class="index"><b><i>Aakriti</i></b>, is a prestigious forum exclusively for girls of CEG. It strives to work towards enhancing the lives of thousands of girls studying here. It provides an excellent opportunity to meet other girls, come out with their ideas and talents, discuss their problems, and possibly come up with a solution. </p>
                      <p class="index">The girlpower when put to proper use can work wonders. This is one platform where all the girls come together and work as a team, thereby elevating their self-confidence besides making new bonds and strengthening old ones. Aakriti believes in paving way for the upliftment of the face of girls in our college, changing the way they've been treated by their male counterparts and potraying each girl, as someone a guy can look up to.</p>
                 </div>
@@ -19,7 +19,7 @@
 <br><br>
         <div class="row">
         <div class="col-sm-4">
-            <img class="img-circle img-responsive text-center" alt="Bootstrap template" src="/images/inaugration/1.jpg">
+            <img class="img-circle img-responsive text-center" alt="Bootstrap template" src="/images/inaugration/4.jpg">
             
         </div>
         <div class="col-sm-4">
