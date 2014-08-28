@@ -1,6 +1,0 @@
-<div class="row" data-equalizer>
-  <div class="large-6 columns panel" data-equalizer-watch>
-<h1>Home#contactus</h1>
-<p>Find me in app/views/home/contactus.html.erb</p>
-</div>
-</div>
