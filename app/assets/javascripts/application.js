@@ -18,9 +18,4 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
-$(document).ready(function() {
-  setTimeout(function() {
-    window.location.reload();
-  }, 100000);
-});
 
