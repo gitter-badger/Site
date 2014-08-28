@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'home/contactus' =>'home#contactus'
   get '/members' =>'home#members'
   get '/gallery' =>'home#gallery'
+  get '/gallery1' =>'home#gallery1'
   get '/inaugration' => 'home#inaugration'
   get '/walkathon' =>'home#walkathon'
   get '/inaugration' => 'home#inaugration'

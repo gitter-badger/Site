@@ -1,0 +1,11 @@
+<div class="col-md-12 text-center" style=" margin-bottom: 20px;">
+    <ul class="pagination pagination-lg">
+        <li class=""><a href="/gallery" >&laquo;</a></li>
+
+                <li class=""><a href="/gallery" >1</a></li>
+                <li class=""><a href="/gallery1" onclick="javascript: return false;">2</a></li>
+
+        <li class=""><a href="/gallery1" ">&raquo;</a></li>
+    </ul>
+</div>
+

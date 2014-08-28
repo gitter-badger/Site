@@ -14,4 +14,7 @@ class HomeController < ApplicationController
   
   def gallery
   end
+  def gallery1
+  	
+  end
 end
