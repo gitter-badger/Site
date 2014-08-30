@@ -3,8 +3,6 @@
 <div class= "row">
 <div class="large-12 columns " data-equalizer-watch>
 
-
-
 <div id="app-content">
     <h2 class="page-header">Women Achivers</h2>
        <% @posts.each do |post| %>
@@ -16,19 +14,19 @@
         <%elsif post.title=="IndiraGandhi"%>
          <figure class="car-img-outer center-block">
            <td> <img width=50 height=50 src="/images/wa/w2.jpg" ></td>
-          </figure>
+       </figure>
            <%elsif post.title=="SarojiniNaidu"%>
          <figure class="car-img-outer center-block">
           <td> <img width=50 height=50 src="/images/wa/w3.jpg" ></td>
-         </figure>
+       </figure>
 	   <%elsif post.title=="OprahWinfrey"%>
          <figure class="car-img-outer center-block">
           <td><img width=50 height=50 src="/images/wa/oprah.jpg" ></td>
-	 </figure>
+       </figure>
           <%else%>
           <figure class="car-img-outer center-block">
            <td><img width=50 height=50 src="/images/wa/noimage.jpg" ></td>
-          </figure>
+       </figure>
 
         <%end%>
         </div>
@@ -37,9 +35,13 @@
         <% if current_admin.has_role? :admin%>
         <div class="col-md-1"><%= link_to 'Show', post %></div>
         
-        <div class="col-md-1"><%= link_to 'Remove', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        <div class="col-md-1"><%= link_to 'Remove', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+	
+	</div>
+       
        <%end%>
-      </div>
+        
+        </div><hr>
        <%end%>
 
 <br>

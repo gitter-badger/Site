@@ -1,8 +1,6 @@
 <li class="has-dropdown">
 <% if admin_signed_in?  %>
-        <a>
-
-          <%= current_admin.email %></a>
+        <a class="login"><%= current_admin.username %> </a>
 <% else %>
         <a>Login</a>
 <%end%>
