@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : " Aakriti" %></title>
+    <title>
+    <%= content_for?(:title) ? yield(:title) : " Aakriti" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -12,15 +13,15 @@
   </head>
 
   <body>
-    <header>
-     <%= render '/layouts/topbar'%>
+   <header>
+     <%#= render '/layouts/topbar'%>
    </header>
         <%= render '/layouts/message'%>
         <% if admin_signed_in? %>
-       <%= render '/layouts/breedcrumbs'%>
-         <%end%>
-      
-    <%= yield %>
+       <%#= render '/layouts/breedcrumbs'%>
+         <%end%> 
+   <%= yield %>
+    
     <%= javascript_include_tag "application" %>
   </body>
 </html>

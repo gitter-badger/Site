@@ -284,8 +284,8 @@
 $crumb-bg: scale-color(#bfbfbf, $lightness: 50%);
 
 // We use these to set the padding around the breadcrumbs.
-// $crumb-padding: rem-calc(9 14 9);
-$crumb-side-padding: rem-calc(15);
+$crumb-padding: rem-calc(10 12 10);
+$crumb-side-padding: rem-calc(18);
 
 // We use these to control border styles.
 // $crumb-function-factor: -10%;
@@ -1129,16 +1129,16 @@ $panel-font-color: #111;
 
 // Height and margin
  $topbar-height: 65px;
-// $topbar-margin-bottom: 0;
+ $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: normal;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
-// $topbar-dropdown-link-color: #fff;
-// $topbar-dropdown-link-bg: #333;
+//$topbar-dropdown-bg: #333;
+//$topbar-dropdown-link-color: #fff;
+//$topbar-dropdown-link-bg: #333;
 // $topbar-dropdown-link-weight: normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
