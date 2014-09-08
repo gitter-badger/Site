@@ -36,30 +36,7 @@
     <div class="address-bar">College of Engineering, Guindy</div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-left">
-                    <li>
-                        <li><a data-pjax="true" href="/women/index">Women</a></li>
-                        <li><a data-pjax="true" href="/trumpet/index">Events</a></li>
-                       <li><a data-pjax="true" href="/vogue/index">Vogue</a></li>
-                        <li><a data-pjax="true" href="/gallery">Gallery</a></li>
-                </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                       <li><%= render '/layouts/login_links'%></a></li>
-
-                </ul>
-                
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <%= render '/home/nav'%>
 
   
 
@@ -75,11 +52,12 @@
         </div>
         <div class="col-md-2"><a href="#" data-reveal-id="<%= post.title%>" class = "btn btn-link"><%= post.title %></a></div>  
         <div class="col-md-6"><%= post.content %></div>  
-        <% if current_admin.has_role? :admin%>
-        <div class="col-md-1"><%= link_to 'Show', post %></div>
+        <%# if current_admin.has_role? :admin%>
+    <!--    <div class="col-md-1"><%= link_to 'Show', post %></div>
         
         <div class="col-md-1"><%= link_to 'Remove', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-       <%end%>
+     --!> 
+       <%#end%>
       </div><hr>
         <%end%>
 <br>

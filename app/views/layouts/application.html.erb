@@ -10,13 +10,14 @@
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
+    <link rel="shortcut icon" href="/images/fav.ico">
   </head>
 
   <body>
    <header>
      <%#= render '/layouts/topbar'%>
    </header>
-        <%= render '/layouts/message'%>
+        <%#= render '/layouts/message'%>
         <% if admin_signed_in? %>
        <%#= render '/layouts/breedcrumbs'%>
          <%end%> 

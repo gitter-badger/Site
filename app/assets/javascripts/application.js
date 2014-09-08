@@ -17,4 +17,4 @@
 //= require turbolinks
 //= require_tree .
 $(function(){ $(document).foundation(); });
-
+$(function () { $("[data-toggle='popover']").popover(); });

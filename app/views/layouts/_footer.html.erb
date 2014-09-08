@@ -21,17 +21,19 @@
                         <div class="col-md-2 col-sm-6">
                             <h5>Service</h5>
                             <ul>
-                                <li><a href="#" data-reveal-id="firstModal" >Contact Us</a>
-                                <div id="firstModal" class="reveal-modal" data-reveal>
-                                <%= render '/home/contactus'%>
-				 <a onclick="history.go(-0);return true;" class="close-reveal-modal">&#215;</a>
-                                </div></li>
+                                <li>
+				<a data-toggle="modal" data-target=".bs-example-modal-lg">Contact Us</a>
 
-                                <li><a href="#" data-reveal-id="firstModal" >Site Map</a>
-                                <div id="firstModal" class="reveal-modal" data-reveal>
-                                <%= render '/home/contactus'%>
-                              <a onclick="history.go(-0);return true;" class="close-reveal-modal">&#215;</a>
-                                </div></li>
+                             <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                      <%= render '/home/contactus'%>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                 </div>
+                              </div>
+                             </div>
+                                 </li>
+
                                 <li><a href="/members">Members</a></li>
                                   </ul>
                         </div>
