@@ -16,125 +16,376 @@
 
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+     
+        
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">  
+    <script src="js/modernizr.custom.js"></script>
+    <!-- Background -->
+     <link rel="stylesheet" type="text/css" href="/css/demo.2.css" >
+    <link rel="stylesheet" type="text/css" href="/css/style2.css" >
+    <script type="text/javascript" src="/js/modernizr.custom.86080.js"></script> 
+   
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/css/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="/css/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="/css/css/component.css" />
+        <script src="/js/js/modernizr.custom.js"></script>
+
+        <!--Preetyphoto-->
+     <link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/stylesheets/prettyPhoto.css" rel="stylesheet">
+    <link href="/assets/stylesheets/main.css" rel="stylesheet">
+    
+    
+    
 
 </head>
 
 <body>
+    <%= render '/layouts/bg'%>
+    <div class="container">
+     <header>
+        <div class="col-md-2"> <img src="/images/a1c.png"></div>
+        <div class="brand">Aakriti</div>
+        <div class="address-bar">College of Engineering, Guindy</div>
 
-    <div class="brand">Aakriti</div>
-    <div class="address-bar">College of Engineering, Guindy</div>
+    </header> 
+        <%= render '/home/nav'%>
+    </div> <!-- Navigation -->
 
-    <!-- Navigation -->
-    <<%= render '/home/nav'%>
+    <div class="container">
+             <section class="tt-grid-wrapper">
+                <ul class="tt-grid tt-effect-fall tt-effect-delay">
+                 
+               
+                    <h1>Overall View of Gallery</h1>
+ 
+               </ul>
 
-   <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Joy of Giving</h1>
-            </div>
+                <ul id="elasticstack" class="elasticstack">
+                <li><img src="images/twalk/t1.png" alt="01"/><h5>Techofes Walkathon</h5></li>
+                <li><img src="/images/women14/7.jpg" alt="03"/><h5>Women's Day Celebration 2014 </h5></li>
+                
 
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/images/jog/2.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/images/jog/1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/images/jog/3.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/images/jog/4.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/images/jog/5.jpg" alt="">
-                </a>
-            </div>
-            
-        </div>
-        
-        <div class="row">
-         <div class="col-lg-12">
-                <h1 class="page-header">Women's Day Celebration</h1>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/images/women/1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/images/women/5.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/images/women/7.jpg" alt="">
-                </a>
-            </div>
-            
-        </div> 
-<%= render '/home/page' %>
-    </div>
-<%= render '/layouts/footer'%>     
-    <!-- /.container -->
-
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+            </ul>
 
 
-    </div>
+         </section>
+    
+    <div class="row">
+           
+                
+                <h2> Techofes Walkathon</h2>
+                <ul class="portfolio-items col-4">
+                   <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/twalk/t1.png" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="images/twalk/t1.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/twalk/t2.png" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="images/twalk/t2.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/twalk/t3.png" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="images/twalk/t3.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/twalk/t5.png" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="images/twalk/t5.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/twalk/t6.png" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="images/twalk/t6.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/twalk/t7.png" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="images/twalk/t7.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/twalk/t8.png" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="images/twalk/t8.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                    
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/twalk/t10.png" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="images/twalk/t10.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/twalk/t11.png" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="images/twalk/t11.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/twalk/t12.png" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="images/twalk/t12.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/twalk/t13.png" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="images/twalk/t13.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/twalk/t14.png" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="images/twalk/t14.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                   </ul>   
+
+                    <hr>
+                   
+                   
+                    
+                   <h2> Women's Day Celebration 2014 </h2>
+                <ul class="portfolio-items col-4">
+                   <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/women14/1.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="/images/women14/1.jpg"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/women14/2.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="/images/women14/2.jpg"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/women14/3.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="/images/women14/3.jpg"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/women14/4.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="/images/women14/4.jpg"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/women14/5.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="/images/women14/5.jpg"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/women14/6.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="/images/women14/6.jpg"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/women14/7.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="/images/women14/7.jpg"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/women14/8.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="/images/women14/8.jpg"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/women14/9.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="/images/women14/9.jpg"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/women14/10.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="/images/women14/10.jpg"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/women14/11.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="/images/women14/11.jpg"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                     <li class="portfolio-item foreign">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/women14/12.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="" href="/images/women14/12.jpg"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                    
+                   
+                   
+                   </ul>   
+                   <hr>
+                  
+         </div>
+                  <%= render '/home/page'%>
+
 </div>
-
-
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
+          
+   
+<%= render '/layouts/footer'%>     
+    
+   
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        
+        <script src="js/jquery-1.11.0.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="/js/js/draggabilly.pkgd.min.js"></script>
+        <script src="/js/js/elastiStack.js"></script>
+        <script>
+            new ElastiStack( document.getElementById( 'elasticstack' ) );
+        </script>
+        
+        <script src="js/classie.js"></script>
+        <script src="js/thumbnailGridEffects.js"></script>
+   
+    <script src="/assets/javascripts/jquery-1.11.0.js"></script>
+     <script src="/js/bootstrap.js"></script>
+     <script src="/js/bootstrap.min.js"></script>
+     <script src="/assets/javascripts/jquery.js"></script>
+     <script src="/assets/javascripts/bootstrap.min.js"></script>
+     <script src="/assets/javascripts/jquery.isotope.min.js"></script>
+     <script src="/assets/javascripts/jquery.prettyPhoto.js"></script>
+     <script src="/assets/javascripts/main.js"></script>
+     
+     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
     </script>
+    
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
 
 
 
