@@ -12,10 +12,10 @@
     <title></title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
-    <link href="stylesheets/font-awesome.min.css" rel="stylesheet">
-    <link href="stylesheets/prettyPhoto.css" rel="stylesheet">
-    <link href="stylesheets/main.css" rel="stylesheet">
+    <link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/stylesheets/prettyPhoto.css" rel="stylesheet">
+    <link href="/assets/stylesheets/main.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -27,13 +27,13 @@
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-       <!-- Background -->
-    <link rel="stylesheet" type="text/css" href="/css/demo.2.css" >
-        <link rel="stylesheet" type="text/css" href="/css/style2.css" >
-        <script type="text/javascript" src="/js/modernizr.custom.86080.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="/css/demo.2.css" >
+   <link rel="stylesheet" type="text/css" href="/css/style2.css" >
+     <!--   <script type="text/javascript" src="/js/modernizr.custom.86080.js"></script>
     
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+     HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -46,65 +46,40 @@
      <%= render '/layouts/bg'%>
      <div class="container">
      <header>
-    <div class="brand">Aakriti</div>
-    <div class="address-bar">College of Engineering, Guindy</div>
-</header> </div>
-    <!-- Navigation -->
-   <%= render '/home/nav'%>
+        <div class="col-md-2"> <img src="/images/a1c.png"></div>
+        <div class="brand">Aakriti</div>
+        <div class="address-bar">College of Engineering, Guindy</div>
+        
+    </header> 
+        <%= render '/home/nav'%>
+    </div>
 
-   <div class= "row">
-<div class="large-12 columns " data-equalizer-watch>
 
-<div id="app-content">
-    <h2 class="page-header" align="center">Women Achivers</h2>
-    <% @posts.each do |post| %>
-        <div class="row">
-        <div class="col-md-1"><%if post.title=="PrathibaPatel"%>
-        <figure class="car-img-outer center-block">
-         <td> <img width=50 height=50 src="/images/wa/w1.jpg" ></td>
-        </figure>
-        <%elsif post.title=="IndiraGandhi"%>
-         <figure class="car-img-outer center-block">
-           <td> <img width=50 height=50 src="/images/wa/w2.jpg" ></td>
-       </figure>
-           <%elsif post.title=="SarojiniNaidu"%>
-         <figure class="car-img-outer center-block">
-          <td> <img width=50 height=50 src="/images/wa/w3.jpg" ></td>
-       </figure>
-     <%elsif post.title=="OprahWinfrey"%>
-         <figure class="car-img-outer center-block">
-          <td><img width=50 height=50 src="/images/wa/oprah.jpg" ></td>
-       </figure>
-          <%else%>
-          <figure class="car-img-outer center-block">
-           <td><img width=50 height=50 src="/images/wa/noimage.jpg" ></td>
-       </figure>
+    <div class= "row">
+        <div class="large-12 columns " data-equalizer-watch>
 
-        <%end%>
-        </div>
-        <div class="col-md-2"><a class="link" href="#" data-reveal-id="<%= post.title%>" class = "btn btn-link"><%= post.title %></a></div>  
-        <div class="col-md-7"><%= post.content %></div>  
+            <div id="app-content">
+                <h2 class="page-header" align="center">Women Achievres</h2>
+                <% @posts.each do |post| %>
+                <div class="row">
+                <div class="col-md-2"><a class="link" href="#" data-reveal-id="<%= post.title%>" class = "btn btn-link"><%= post.title %></a></div>  
+                <div class="col-md-7"><%= post.content %></div>  
         <!--        <%# if current_admin.has_role? :admin%>
         <div class="col-md-1"><%= link_to 'Show', post %></div>
         
-   -->      <div class="col-md-1"><%= link_to 'Remove', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-
-  </div>
-       
-      <%#end%>
-        
+           -->  <div class="col-md-1"><%= link_to 'Remove', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        <%#end%>
+                </div>
+                <%end%>
+                <br>
+                <br>
+            </div>
         </div>
-       <%end%>
-
-<br>
-<br>
-   </div>
-   </div>
-<div class="large-12 columns " data-equalizer-watch>
 
 
-<div class="container">
-            
+        <div class="container">
+        <div class="large-12 columns " data-equalizer-watch>
+           
                 
                 <ul class="portfolio-filter">
                     <li><a class="btn btn-primary active" href="" data-filter="*">All</a></li> 
@@ -148,52 +123,42 @@
                         </div>
                     </li><!--/.portfolio-item-->
                     
-                    <
+                    
                    
                    </ul>   
-         
+         </div>
         </div><!--/.container-->
         
-</div>
+        <div id="OprahWinfrey" class="reveal-modal" data-reveal>
+            <h2>AIR COMMODORE PADMAVATHY BANDOPADHYAYA</h2>
+            <p>Coming from a conservative Tamilian family, educated in Tamil, when she joined the AFMC, Bandopadhyaya thought she had been paradropped into a whole new world. </p>
+            <p>Suddenly she was with people who ate with forks and knives, spoke in English and sang English songs. She could only eat using her fingers, spoke little Hindi or English, and knew no English songs. Today, Bandopadhyaya prattles in Bengali as well - a language she picked up after marrying a Bengali Air Force officer. </p>
+
+            <p>Trained in Carnatic classical vocal music ("like all south Indian children", she insists), Bandopadhyaya is fond of listening to music and likes mythology as well.</p>
+            <p>After 32 years in the Air Force, is at 55, the first woman Air Commodore in the Air Force. And that is just one of the firsts in a long string of achievements to her credit. She was the first Indian woman officer to have conducted research in the Arctic region. And she was the first woman to be made a fellow of the Aerospace Medical Society of India. </p>
+            <a  onclick="history.go(-0);return true;" class="close-reveal-modal">&#215;</a>
+        </div>
 
 
- 
-<div id="OprahWinfrey" class="reveal-modal" data-reveal>
-   <h2>AIR COMMODORE PADMAVATHY BANDOPADHYAYA</h2>
-<p>Coming from a conservative Tamilian family, educated in Tamil, when she joined the AFMC, Bandopadhyaya thought she had been paradropped into a whole new world. </p>
-<p>Suddenly she was with people who ate with forks and knives, spoke in English and sang English songs. She could only eat using her fingers, spoke little Hindi or English, and knew no English songs. Today, Bandopadhyaya prattles in Bengali as well - a language she picked up after marrying a Bengali Air Force officer. </p>
-
-<p>Trained in Carnatic classical vocal music ("like all south Indian children", she insists), Bandopadhyaya is fond of listening to music and likes mythology as well.</p>
-<p>After 32 years in the Air Force, is at 55, the first woman Air Commodore in the Air Force. And that is just one of the firsts in a long string of achievements to her credit. She was the first Indian woman officer to have conducted research in the Arctic region. And she was the first woman to be made a fellow of the Aerospace Medical Society of India. </p>
-   <a  onclick="history.go(-0);return true;" class="close-reveal-modal">&#215;</a>
- </div>
-
-
-<% if current_admin.has_role? :admin%>
-<p >
-<%#= link_to 'New Post', new_post_path , :class => 'btn btn-medium btn-success' %>
-</p>
-<% end %>
-
-
-
+        <% if current_admin.has_role? :admin%>
+        <p >
+            <%#= link_to 'New Post', new_post_path , :class => 'btn btn-medium btn-success' %>
+        </p>
+        <% end %>
 </div>
 
 <%= render '/layouts/footer'%>
-    <!-- jQuery Version 1.11.0 -->
-    <script src="javascripts/jquery-1.11.0.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-         <script src="js/bootstrap.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="javascripts/jquery.js"></script>
-     <script src="javascripts/bootstrap.min.js"></script>
-     <script src="javascripts/jquery.isotope.min.js"></script>
-     <script src="javascripts/jquery.prettyPhoto.js"></script>
-     <script src="javascripts/main.js"></script>
+   
+    <script src="/assets/javascripts/jquery-1.11.0.js"></script>
+     <script src="/js/bootstrap.js"></script>
+     <script src="/js/bootstrap.min.js"></script>
+     <script src="/assets/javascripts/jquery.js"></script>
+     <script src="/assets/javascripts/bootstrap.min.js"></script>
+     <script src="/assets/javascripts/jquery.isotope.min.js"></script>
+     <script src="/assets/javascripts/jquery.prettyPhoto.js"></script>
+     <script src="/assets/javascripts/main.js"></script>
      
-    <!-- Script to Activate the Carousel -->
-    <script>
+     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
