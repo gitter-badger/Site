@@ -30,7 +30,7 @@
 
    <link rel="stylesheet" type="text/css" href="/css/demo.2.css" >
    <link rel="stylesheet" type="text/css" href="/css/style2.css" >
-     <!--   <script type="text/javascript" src="/js/modernizr.custom.86080.js"></script>
+   <!--     <script type="text/javascript" src="/js/modernizr.custom.86080.js"></script>
     
 
      HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -50,44 +50,27 @@
         <div class="brand">Aakriti</div>
         <div class="address-bar">College of Engineering, Guindy</div>
         
-     
+     </header>
+        
         <%= render '/home/nav'%>
-    
+    </div>
 
 
     <div class= "row">
-        <div class="large-12 columns " data-equalizer-watch>
-
-            <div id="app-content">
-                <h2 class="page-header" align="center">Women Achievres</h2>
-                <% @posts.each do |post| %>
-                <div class="row">
-                <div class="col-md-2"><a class="link" href="#" data-reveal-id="<%= post.title%>" class = "btn btn-link"><%= post.title %></a></div>  
-                <div class="col-md-7"><%= post.content %></div>  
-        <!--        <%# if current_admin.has_role? :admin%>
-        <div class="col-md-1"><%= link_to 'Show', post %></div>
-        
-           -->  <div class="col-md-1"><%= link_to 'Remove', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-        <%#end%>
-                </div>
-                <%end%>
-                <br>
-                <br>
-            </div>
-        </div>
-
-
+       
         <div class="large-12 columns " data-equalizer-watch>
            
                 
                 <ul class="portfolio-filter">
                     <li><a class="btn btn-primary active" href="" data-filter="*">All</a></li> 
-                    <li><a class="btn btn-primary" href="" data-filter=".india">India</a></li>
-                    <li><a class="btn btn-primary" href="" data-filter=".foreign">Foreign</a></li>
-                   
+                    <li><a class="btn btn-primary" href="" data-filter=".ss">Social Service</a></li>
+                    <li><a class="btn btn-primary" href="" data-filter=".wih">Women In History!</a></li>
+                    <li><a class="btn btn-primary" href="" data-filter=".emp">Education , media and politics </a></li>
+                    <li><a class="btn btn-primary" href="" data-filter=".tn">Technology</a></li>
+
                 </ul><!--/#portfolio-filter-->
                 <ul class="portfolio-items col-4">
-                   <li class="portfolio-item foreign">
+                   <li class="portfolio-item emp">
                         <div class="item-inner">
                             <div class="portfolio-image">
                                 <img src="/images/wa/oprah.jpg" alt="">
@@ -98,7 +81,7 @@
                             <h5>Oprah Winfrey</h5>
                         </div>
                     </li><!--/.portfolio-item-->
-                    <li class="portfolio-item india">
+                    <li class="portfolio-item ss">
                         <div class="item-inner">
                             <div class="portfolio-image">
                                 <img src="/images/wa/chinnapillai1.jpg" alt="">
@@ -110,7 +93,7 @@
                         </div>
                     </li><!--/.portfolio-item-->
 
-                    <li class="portfolio-item india">
+                    <li class="portfolio-item tn">
                         <div class="item-inner">
                             <div class="portfolio-image">
                                 <img src="/images/wa/AIR_COMMODORE_PADMAVATHY_BANDOPADHYAYA.jpg" alt="">
@@ -121,30 +104,74 @@
                             <h5>AIR COMMODORE PADMAVATHY BANDOPADHYAYA</h5>
                         </div>
                     </li><!--/.portfolio-item-->
+                     <li class="portfolio-item wih">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/wa/RAZIYA SULTANA.png" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="THE FIRST  WOMAN WHO RULED INDIA!" href="/images/wa/screen4.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                            <h5>RAZIYA SULTANA</h5>
+                        </div>
+                    </li><!--/.portfolio-item-->
+
+                    <li class="portfolio-item wih">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/wa/ANANDIBAI JOSHI.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="INDIA’S FIRST WOMEN DOCTOR" href="/images/wa/screen5.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                            <h5>ANANDIBAI JOSHIA</h5>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item wih">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/wa/INDIRA GANDHI.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="“People tend to forget their duties but remember their rights!”" href="/images/wa/screen6.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                            <h5>INDIRA GANDHI</h5>
+                        </div>
+                    </li><!--/.portfolio-item-->
+
+                    <li class="portfolio-item tn">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/wa/DR. KIRAN MAZUMDAR-SHAW.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="BIO-TECH QUEEN OF INDIA" href="/images/wa/screen7.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                            <h5>DR. KIRAN MAZUMDAR-SHAW</h5>
+                        </div>
+                    </li><!--/.portfolio-item-->
+
+
+                    <li class="portfolio-item tn">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="/images/wa/SHERYL SANDBERG.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="“A truly equal world would be one where women ran half our countries and companies and men ran half our homes.”" href="/images/wa/screen8.png"><i class="icon-eye-open"></i>View</a>             
+                                </div>
+                            </div>
+                            <h5>SHERYL SANDBERG</h5>
+                        </div>
+                    </li><!--/.portfolio-item-->
                     
                     
                    
                    </ul>   
          </div>
         
-        <div id="OprahWinfrey" class="reveal-modal" data-reveal>
-            <h2>AIR COMMODORE PADMAVATHY BANDOPADHYAYA</h2>
-            <p>Coming from a conservative Tamilian family, educated in Tamil, when she joined the AFMC, Bandopadhyaya thought she had been paradropped into a whole new world. </p>
-            <p>Suddenly she was with people who ate with forks and knives, spoke in English and sang English songs. She could only eat using her fingers, spoke little Hindi or English, and knew no English songs. Today, Bandopadhyaya prattles in Bengali as well - a language she picked up after marrying a Bengali Air Force officer. </p>
 
-            <p>Trained in Carnatic classical vocal music ("like all south Indian children", she insists), Bandopadhyaya is fond of listening to music and likes mythology as well.</p>
-            <p>After 32 years in the Air Force, is at 55, the first woman Air Commodore in the Air Force. And that is just one of the firsts in a long string of achievements to her credit. She was the first Indian woman officer to have conducted research in the Arctic region. And she was the first woman to be made a fellow of the Aerospace Medical Society of India. </p>
-            <a  onclick="history.go(-0);return true;" class="close-reveal-modal">&#215;</a>
-        </div>
-
-
-        <% if current_admin.has_role? :admin%>
-        <p >
-            <%#= link_to 'New Post', new_post_path , :class => 'btn btn-medium btn-success' %>
-        </p>
-        <% end %>
-        </header>
-        </div>
+      
+        
 </div>
 
 <%= render '/layouts/footer'%>
