@@ -31,17 +31,12 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 </script>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    
 
 </head>
 
 <body>
-         <%#= render '/layouts/bg'%>
+        
     <div class="container">
      <header>
         <div class="col-md-2"><a href="/home/index"><img src="/images/a1c.png"></a></div>
@@ -84,36 +79,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                             <a href="http://www.herschelsupply.com/"><img src="img/6_screen.jpg"/></a>
                         </div>
                     </li>
-                    <li>
-                        <div class="description">
-                            <h2>Column or Row</h2>
-                            <p>The items in the tilted container are either laid out in a column or in a row. For some directions we need to adjust the animation delays for the items, since we don't want the items to overlap each other when they move in or out.</p>
-                        </div>
-                        <div class="tiltview row">
-                            <a href="http://grovemade.com/"><img src="img/1_mobile.jpg"/></a>
-                            <a href="https://tsovet.com/"><img src="img/2_mobile.jpg"/></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="description">
-                            <h2>Responsiveness</h2>
-                            <p>For smaller screens, the items on the right hand side will become less opaque and serve as decoration only. The focus will be on the description which will occupy all the width.</p>
-                        </div>
-                        <div class="tiltview col">
-                            <a href="http://pexcil.com/"><img src="img/3_screen.jpg"/></a>
-                            <a href="http://foodsense.is/"><img src="img/4_screen.jpg"/></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="description">
-                            <h2>Navigation</h2>
-                            <p>For the "line" navigation we use a little trick to make the clickable area a bit bigger: we add a thick white border to the top and bottom of the span. Since the border is part of the element, it will be part of the clickable zone.</p>
-                        </div>
-                        <div class="tiltview row">
-                            <a href="http://minimalmonkey.com/"><img src="img/5_mobile.jpg"/></a>
-                            <a href="http://www.herschelsupply.com/"><img src="img/6_mobile.jpg"/></a>
-                        </div>
-                    </li>
+                   
+                    
+                    
                 </ol>
             </div><!-- /slideshow -->
         </div>
@@ -126,16 +94,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
         interval: 5000 //changes the speed
     })
     </script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-        <script type="text/javascript" src="/js/vogue/jquery.easing.1.3.js"></script>
-        <!-- the jScrollPane script -->
-        <script type="text/javascript" src="/js/vogue/jquery.mousewheel.js"></script>
-        <script type="text/javascript" src="/js/vogue/jquery.contentcarousel.js"></script>
-        <script type="text/javascript">
-            $('#ca-container').contentcarousel();
-        </script>
-
-
+    
         <!--Titled-->
 
         <script src="/js/title/classie.js"></script>
