@@ -22,29 +22,26 @@
                         <div class="col-md-2 col-sm-6">
                             <h4>Service</h4>
                             <ul>
-                                <li>
-				       <a data-toggle="modal" data-target=".bs-example-modal-lg">Contact Us</a>
+                    <li><a href="" data-reveal-id="myModal">Contact Us</a>
 
-                             <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                              <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                      <%= render '/home/contactus'%>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                 </div>
-                              </div>
-                             </div>
-                                 </li>
-
-                                <li><a href="/members">Members</a></li>
-                                  </ul>
-                        </div>
-                    <!-- Customer Service Links Ends -->
-                    <!-- Follow Us Links Starts -->
-                        <div class="col-md-2 col-sm-6">
+                    <div id="myModal" class="reveal-modal" data-reveal>
+                    <%= render '/home/contactus'%>
+                    <a onclick="history.go(-0);return true;" class="close-reveal-modal">&#215;</a>
+                    </div></li>
+				    <li><a href="/members">Members</a></li>
+			    </ul>
+		    </div>
+    			    <div class="col-md-2 col-sm-6">
                             <h4>Follow Us</h4>
-                            <ul>
-                                <li><a href="https://www.facebook.com/AakritiCEG?fref=ts"><span class="avatar"><i class="fa fa-facebook">&nbsp;</i></span>Facebook</a></li>
-                                <li><a href="#"><span class="avatar"><i class="fa fa-twitter">&nbsp;</i></span>Twitter</a></li>
+			    <ul>
+				    <li><a href="https://www.facebook.com/AakritiCEG?fref=ts"><span class="avatar"><i class="fa fa-facebook">&nbsp;</i></span>Facebook</a></li>
+    				    <li><a href="#"><span class="avatar"><i class="fa fa-twitter">&nbsp;</i></span>Twitter</a></li>
                            </ul>
-        </footer>
+		   </div>
+	   </div>
+   </div>
+		   </footer>
 </div>
+
+
+<body>
