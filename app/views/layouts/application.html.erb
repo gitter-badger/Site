@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>
     <%= content_for?(:title) ? yield(:title) : " Aakriti" %></title>
 
@@ -11,9 +15,18 @@
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
     <link rel="shortcut icon" href="/images/fav1.ico">
-   <link rel="stylesheet" type="text/css" href="/css/demo.2.css" >
-        <link rel="stylesheet" type="text/css" href="/css/style2.css" >
-      <!--   <script type="text/javascript" src="/js/modernizr.custom.86080.js"></script> --!>
+    <!--Background-->
+    <link rel="stylesheet" type="text/css" href="/css/demo.2.css">
+    <link rel="stylesheet" type="text/css" href="/css/style2.css" >
+    <!--   <script type="text/javascript" src="/js/modernizr.custom.86080.js"></script> --!>
+    <!--Prettyphoto-->
+    <link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/stylesheets/prettyPhoto.css" rel="stylesheet">
+    <link href="/assets/stylesheets/main.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">	 
   </head>
 
   <body>
