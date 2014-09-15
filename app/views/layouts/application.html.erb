@@ -11,8 +11,8 @@
     <title>
     <%= content_for?(:title) ? yield(:title) : " Aakriti" %></title>
 
-    <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "vendor/modernizr" %>
+    <%#= stylesheet_link_tag    "application"  %>
+    <%#= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
     <link rel="shortcut icon" href="/images/fav1.ico">
     <!--Background-->
@@ -27,12 +27,19 @@
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">	 
-  </head>
+    <!--Circular-->
+     <link rel="stylesheet" type="text/css" href="/css/vogue/demo.css" >
+     <link rel="stylesheet" type="text/css" href="/css/vogue/style.css" >
+     <link rel="stylesheet" type="text/css" href="/css/vogue/jquery.jscrollpane.css" media="all" >
+     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	 
+    </head>
 
   <body>
    <%= render '/layouts/bg'%>
    <%= yield %>
     
-    <%= javascript_include_tag "application" %>
+   <%#= javascript_include_tag "application" %>
   </body>
 </html>
