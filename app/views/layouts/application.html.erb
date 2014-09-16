@@ -11,8 +11,8 @@
     <title>
     <%= content_for?(:title) ? yield(:title) : " Aakriti" %></title>
 
-    <%#= stylesheet_link_tag    "application"  %>
-    <%#= javascript_include_tag "vendor/modernizr" %>
+    <%= stylesheet_link_tag    "application"  %>
+    <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
     <link rel="shortcut icon" href="/images/fav1.ico">
     <!--Background-->
@@ -31,8 +31,6 @@
      <link rel="stylesheet" type="text/css" href="/css/vogue/demo.css" >
      <link rel="stylesheet" type="text/css" href="/css/vogue/style.css" >
      <link rel="stylesheet" type="text/css" href="/css/vogue/jquery.jscrollpane.css" media="all" >
-     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	 
     </head>
 
@@ -40,6 +38,6 @@
    <%= render '/layouts/bg'%>
    <%= yield %>
     
-   <%#= javascript_include_tag "application" %>
+   <%= javascript_include_tag "application" %>
   </body>
 </html>
