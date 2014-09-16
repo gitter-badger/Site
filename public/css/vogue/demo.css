@@ -7,10 +7,7 @@ body{
 	font-family: 'PT Sans Narrow', Arial, sans-serif;
 	font-size:12px;
 }
-a{
-	color:#000;
-	text-decoration:none;
-}
+
 .clr{
 	clear:both;
 }
@@ -27,30 +24,85 @@ h1 span, h5{
 	display:block;
 	color:#60817a;
 }
-/* Header Style */
-.header{
-	height:25px;
-	line-height:24px;
-	font-size:13px;
-	background:#000;
-	opacity:0.9;
-	text-transform:uppercase;
-	z-index:4;
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        padding: 0 0 10px;
+        text-align: left;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+    .img-right {
+    	float: right;
+	margin-left: 25px;
+	}
+
+    .address-bar {
+        display: inherit;
+        margin-left: 0px ;
+	margin-right: 200px;
+        padding: 0 0 40px;
+        text-align: left;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .nav>li>a {
+        padding: 20px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
 }
-.header a{
-	padding:5px 10px;
-	letter-spacing:1px;
-	text-shadow:1px 1px 1px #000;
-	color:#ddd;
-	text-align:right;
-}
-.header a:hover{
-	color:#fff;
-}
-.header a span{
-	font-weight:bold;
-}
-.header span.right_ab{
-	position:absolute;
-	right:4px;
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
 }

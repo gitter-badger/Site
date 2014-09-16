@@ -14,14 +14,19 @@
 </head>
 
 <body>
-    <div class="container">
-      <header>
-        <div class="col-md-2"> <a href="/home/index"><img src="/images/a1c.png"></a></div>
+    <<div class="container">
+     <header>
+         <!-- > <div class="col-md-1"> <a href="/home/index"><img src="/images/a1c.png"></a></div> -->
+         <div class="img-left"><a href="/home/index"><img width=100 height=100 src="/images/a1c.png"></a></div>
         <div class="brand">Aakriti</div>
-        <div class="address-bar">College of Engineering, Guindy</div>
-      </header> 
-      <%= render '/home/nav'%>
-    </div> <!-- Navigation -->
+    <div class="address-bar">College of Engineering, Guindy </div>
+</header>
+</div>
+<div class="col-sm-12">
+        
+        <%= render '/home/nav'%>
+
+    </div>
 
     <div class= "container">
     <div class="large-12 columns " data-equalizer-watch>
